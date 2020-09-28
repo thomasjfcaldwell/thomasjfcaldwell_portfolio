@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, CardGroup, Carousel } from 'react-bootstrap';
+import carousel1 from './portfolio.image.jpg'
+import portrait from './portraitphoto.png'
+import carousel2 from './portfolio.image.1.png';
 
 class Home extends Component {
 	render() {
@@ -9,7 +12,7 @@ class Home extends Component {
 					<Col xs={6}>
 						<h1>About Thomas</h1>
 						<Card>
-							<Card.Img variant='top' src='holder.js/100px180' />
+							<Card.Img variant='top' src={portrait} />
 							<Card.Body>
 								<Card.Text>
 									Some quick example text to build on the card title and make up
@@ -67,22 +70,14 @@ class Home extends Component {
 				</Row>
 				<Carousel>
 					<Carousel.Item>
-						<img
-							className='d-block w-100'
-							src='holder.js/800x400?text=First slide&bg=373940'
-							alt='First slide'
-						/>
+						<img className='d-block w-100' src={carousel1} alt='First slide' />
 						<Carousel.Caption>
 							<h3>First slide label</h3>
 							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
-						<img
-							className='d-block w-100'
-							src='holder.js/800x400?text=Second slide&bg=282c34'
-							alt='Third slide'
-						/>
+						<img className='d-block w-100' src={carousel2} alt='Third slide' />
 
 						<Carousel.Caption>
 							<h3>Second slide label</h3>
@@ -90,11 +85,7 @@ class Home extends Component {
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
-						<img
-							className='d-block w-100'
-							src='holder.js/800x400?text=Third slide&bg=20232a'
-							alt='Third slide'
-						/>
+						<img className='d-block w-100' src={carousel1} alt='Third slide' />
 
 						<Carousel.Caption>
 							<h3>Third slide label</h3>
@@ -105,14 +96,8 @@ class Home extends Component {
 					</Carousel.Item>
 				</Carousel>
 				<div className='container contact-form'>
-					<div className='contact-image'>
-						<img
-							src='https://image.ibb.co/kUagtU/rocket_contact.png'
-							alt='rocket_contact'
-						/>
-					</div>
 					<form method='post'>
-						<h3>Drop Us a Message</h3>
+						<h3 className='text-center'>Drop Thomas a Message</h3>
 						<div className='row'>
 							<div className='col-md-6'>
 								<div className='form-group'>

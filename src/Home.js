@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, CardGroup, Carousel } from 'react-bootstrap';
-import carousel1 from './portfolio.image.jpg';
-import portrait from './portraitphoto.png';
-import carousel2 from './portfolio.image.1.png';
+import carousel1 from './fetchgoalcara.png';
+import portrait from './profile.image4.png';
+import carousel2 from './fleetcara.png';
 import quizImage from './gameheadef.png';
 import wizardImage from './wizard copy.png';
 import fleetImage from './fleet.png';
@@ -13,68 +13,93 @@ class Home extends Component {
 			<>
 				<Row className='mt-5'>
 					<Col md={6}>
-						<h1>About Thomas</h1>
+						<h1 className='p-2 bg-primary text-center text-light'>
+							About Thomas
+						</h1>
 						<Card>
-							<Card.Img
-								variant='top'
-								src={portrait}
+							<Card.Img variant='top' src={portrait} />
+							<Card.Body
 								style={{
-									maxHeight: '27em',
-								}}
-							/>
-							<Card.Body>
-								<Card.Text>
+									backgroundColor: '#000555',
+								}}>
+								<Card.Text className='p-2 bg-primary text-center text-light'>
 									Thomas is a Web Developer from Huntington Beach CA.
 								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
 					<Col md={6} className='text-center'>
-						<h1>Projects</h1>
-						<CardGroup>
-							<Card>
-								<Card.Title className='mt-3'>Quiz Game</Card.Title>
-								<Card.Img variant='top' src={quizImage} className='p-2' />
-								<Card.Body>
-									<Card.Text>
-										Project made using vanilla JavaScript, html and Css. Get to
-										Travel the world and learn about capital cities.
-									</Card.Text>
-								</Card.Body>
-
-								<Card.Footer>See More Information Here</Card.Footer>
-							</Card>
-							<Card>
-								<Card.Title className='mt-3'>Know Your Wizard</Card.Title>
-								<Card.Img variant='top' src={wizardImage} className='p-2' />
-								<Card.Body>
-									<Card.Text>
-										App made in React using 3rd party api for data. For all
-										Harry potter fans to learn about different characters in the
-										books.
-									</Card.Text>
-								</Card.Body>
-								<Card.Footer>See More Information Here</Card.Footer>
-							</Card>
-							<Card>
-								<Card.Title className='mt-3'>Fleet</Card.Title>
-								<Card.Img variant='top' src={fleetImage} className='p-2' />
-								<Card.Body>
-									<Card.Text>
-										A group app developed with 3 other developers.
-									</Card.Text>
-								</Card.Body>
-								<Card.Footer>See More Information Here</Card.Footer>
-							</Card>
-						</CardGroup>
+						<Card className='mt-5 mb-5 border-0'>
+							<Card.Body className='mt-2 mb-5 border-0'>
+								<Card.Text className='mt-2'>
+									<p>
+										Forward thinking and mature UI developer who can deal with
+										all tasks without fuss. Able to synthesize information and
+										achieve a solution to a problem and take the lead on that
+										task. A skilled designer with experience in front-end and
+										back end web applications. Looking to further skills and
+										bring expertise, leadership and creativity to the right role
+									</p>
+									<h1>Technologies</h1>
+									<ul className='text-center list-unstyled'>
+										<li>HTML</li>
+										<li>CSS</li>
+										<li>JavaScript</li>
+										<li>Python</li>
+										<li>Node JS</li>
+										<li>React</li>
+										<li>Django</li>
+										<li>Bootstrap</li>
+										<li>Adobe Creative Cloud</li>
+										<li>Wordpress</li>
+										<li>eCommerce</li>
+									</ul>
+								</Card.Text>
+							</Card.Body>
+						</Card>
 					</Col>
 				</Row>
+				<CardGroup>
+					<Card>
+						<Card.Title className='mt-5'>Quiz Game</Card.Title>
+						<Card.Img variant='top' src={quizImage} className='p-2' />
+						<Card.Body>
+							<Card.Text className='mt-2'>
+								Project made using vanilla JavaScript, html and Css. Get to
+								Travel the world and learn about capital cities.
+							</Card.Text>
+						</Card.Body>
+
+						<Card.Footer>See More Information Here</Card.Footer>
+					</Card>
+					<Card>
+						<Card.Title className='mt-3'>Know Your Wizard</Card.Title>
+						<Card.Img variant='top' src={wizardImage} className='p-2' />
+						<Card.Body>
+							<Card.Text>
+								App made in React using 3rd party api for data. For all Harry
+								potter fans to learn about different characters in the books.
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer>See More Information Here</Card.Footer>
+					</Card>
+					<Card>
+						<Card.Title className='mt-3'>Fleet</Card.Title>
+						<Card.Img variant='top' src={fleetImage} className='p-2' />
+						<Card.Body>
+							<Card.Text>
+								A group app developed with 3 other developers.
+							</Card.Text>
+						</Card.Body>
+						<Card.Footer>See More Information Here</Card.Footer>
+					</Card>
+				</CardGroup>
 				<Carousel className='mt-5'>
 					<Carousel.Item>
 						<img className='d-block w-100' src={carousel1} alt='First slide' />
-						<Carousel.Caption>
-							<h3>First slide label</h3>
-							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<Carousel.Caption className='text-dark'>
+							<h3>FetchGoal</h3>
+							<p className='text-dark'>Displayed on different devices</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -82,7 +107,9 @@ class Home extends Component {
 
 						<Carousel.Caption>
 							<h3>Second slide label</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<p className='text-dark'>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							</p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>

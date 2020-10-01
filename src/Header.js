@@ -6,7 +6,10 @@ import About from './About'
 class Header extends Component {
 	render() {
 		return (
-			<Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
+			<Navbar collapseOnSelect expand='md' style={{
+				minHeight:'10em',
+				backgroundColor:'#000555'
+			}}>
 				<Navbar.Brand>
 					<Link to={'/home'}>thomasjfcaldwell portfolio</Link>
 				</Navbar.Brand>

@@ -59,8 +59,8 @@ class Home extends Component {
 						</Card>
 					</Col>
 				</Row>
-				<CardGroup>
-					<Card>
+				<CardGroup className='mt-5'>
+					<Card className='m-3'>
 						<Card.Title className='mt-5'>Quiz Game</Card.Title>
 						<Card.Img variant='top' src={quizImage} className='p-2' />
 						<Card.Body>
@@ -72,7 +72,7 @@ class Home extends Component {
 
 						<Card.Footer>See More Information Here</Card.Footer>
 					</Card>
-					<Card>
+					<Card className='m-3'>
 						<Card.Title className='mt-3'>Know Your Wizard</Card.Title>
 						<Card.Img variant='top' src={wizardImage} className='p-2' />
 						<Card.Body>
@@ -83,7 +83,7 @@ class Home extends Component {
 						</Card.Body>
 						<Card.Footer>See More Information Here</Card.Footer>
 					</Card>
-					<Card>
+					<Card className='m-3'>
 						<Card.Title className='mt-3'>Fleet</Card.Title>
 						<Card.Img variant='top' src={fleetImage} className='p-2' />
 						<Card.Body>

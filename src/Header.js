@@ -2,40 +2,47 @@ import React, { Component } from 'react';
 import { Nav, Navbar,NavDropdown} from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
 import About from './About'
+import logo from './header.svg'
 
 class Header extends Component {
 	render() {
 		return (
-			<Navbar collapseOnSelect expand='md' style={{
-				minHeight:'10em',
-				backgroundColor:'#000555'
-			}}>
+			<Navbar
+				collapseOnSelect
+				expand='md'
+				style={{
+					minHeight: '10em',
+					backgroundColor: '#000555',
+				}}>
 				<Navbar.Brand>
-					<Link to={'/home'}>thomasjfcaldwell portfolio</Link>
+					<Link
+						to={'/home'}
+						expand='md'>
+						thomas caldwell portfolio
+					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
-					<Nav className='mr-auto'>
+					<Nav className='mr-auto mx-auto'>
 						<Nav.Link>
 							<Link to={'/contact'}>Contact</Link>
 						</Nav.Link>
 						<Nav.Link>
 							<Link to={'/about'}>About</Link>
-							<Route
-								exact
-								path='/about'
-								
-							/>
+							<Route exact path='/about' />
 						</Nav.Link>
-						<NavDropdown title='Projects' id='collasible-nav-dropdown'>
+						<NavDropdown
+							title='Projects'
+							id='collasible-nav-dropdown'
+							className='text-warning'>
 							<NavDropdown.Item>
-								<Link to={'/project1'}>Project 1</Link>
+								<Link to={'/project1'}>Quiz Game</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link to={'/project2'}>Project 2</Link>
+								<Link to={'/project2'}>Know Your Wizard</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link to={'/project3'}>Project 3</Link>
+								<Link to={'/project3'}>Fleet</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>

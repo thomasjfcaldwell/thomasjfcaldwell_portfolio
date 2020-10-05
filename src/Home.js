@@ -12,12 +12,12 @@ class Home extends Component {
 		return (
 			<>
 				<Row className='mt-5'>
-					<Col md={6}>
+					<Col md={6} className='p-5'>
 						<h1 className='p-2 bg-primary text-center text-light'>
 							About Thomas
 						</h1>
 						<Card>
-							<Card.Img variant='top' src={portrait} />
+							<Card.Img variant='top' src={portrait} className='p-5' />
 							<Card.Body
 								style={{
 									backgroundColor: '#000555',
@@ -29,7 +29,7 @@ class Home extends Component {
 						</Card>
 					</Col>
 					<Col md={6} className='text-center'>
-						<Card className='mt-5 mb-5 border-0'>
+						<Card className='mt-2 p-5 border-0'>
 							<Card.Body className='mt-2 mb-5 border-0'>
 								<Card.Text className='mt-2'>
 									<p>
@@ -54,14 +54,20 @@ class Home extends Component {
 										<li>Wordpress</li>
 										<li>eCommerce</li>
 									</ul>
+									<h1>Certificates</h1>
 								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
 				</Row>
-				<CardGroup className='mt-5'>
-					<Card className='m-3'>
-						<Card.Title className='mt-5'>Quiz Game</Card.Title>
+				<CardGroup
+					className='mt-5 border-0'
+					style={{
+						fontFamily: 'Montserrat',
+					}}>
+					>
+					<Card className='m-3 border-0'>
+						<Card.Title className='mt-5 p-2 text-center'>Quiz Game</Card.Title>
 						<Card.Img variant='top' src={quizImage} className='p-2' />
 						<Card.Body>
 							<Card.Text className='mt-2'>
@@ -70,10 +76,25 @@ class Home extends Component {
 							</Card.Text>
 						</Card.Body>
 
-						<Card.Footer>See More Information Here</Card.Footer>
+						<Card.Footer className='mt-2 bg-white border-0 text-center'>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to GitHub Repo
+								</a>
+							</Card.Link>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to Deployed app
+								</a>
+							</Card.Link>
+						</Card.Footer>
 					</Card>
-					<Card className='m-3'>
-						<Card.Title className='mt-3'>Know Your Wizard</Card.Title>
+					<Card className='m-3 border-0'>
+						<Card.Title className='mt-5 text-center'>
+							Know Your Wizard
+						</Card.Title>
 						<Card.Img variant='top' src={wizardImage} className='p-2' />
 						<Card.Body>
 							<Card.Text>
@@ -81,20 +102,46 @@ class Home extends Component {
 								potter fans to learn about different characters in the books.
 							</Card.Text>
 						</Card.Body>
-						<Card.Footer>See More Information Here</Card.Footer>
+						<Card.Footer className='mt-2 bg-white border-0 text-center'>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to GitHub Repo
+								</a>
+							</Card.Link>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to Deployed app
+								</a>
+							</Card.Link>
+						</Card.Footer>
 					</Card>
-					<Card className='m-3'>
-						<Card.Title className='mt-3'>Fleet</Card.Title>
+					<Card className='m-3 border-0'>
+						<Card.Title className='mt-5 text-center'>Fleet</Card.Title>
 						<Card.Img variant='top' src={fleetImage} className='p-2' />
 						<Card.Body>
 							<Card.Text>
 								A group app developed with 3 other developers.
 							</Card.Text>
 						</Card.Body>
-						<Card.Footer>See More Information Here</Card.Footer>
+						<Card.Footer className='mt-2 bg-white border-0 text-center'>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to GitHub Repo
+								</a>
+							</Card.Link>
+							<Card.Link className='border border-primary p-2 text-center'>
+								{' '}
+								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									Link to Deployed app
+								</a>
+							</Card.Link>
+						</Card.Footer>
 					</Card>
 				</CardGroup>
-				<Carousel className='mt-5'>
+				<Carousel className='m-5 p-5'>
 					<Carousel.Item>
 						<img className='d-block w-100' src={carousel1} alt='First slide' />
 						<Carousel.Caption className='text-dark'>

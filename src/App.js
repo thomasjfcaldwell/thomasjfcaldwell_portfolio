@@ -9,7 +9,7 @@ import './App.scss';
 class App extends Component {
 	render() {
 		return (
-			<div className ='body'> 
+			<div > 
 				<Header />
 				<Route
 					path='/about'
@@ -17,7 +17,7 @@ class App extends Component {
 						return <About return />;
 					}}
 				/>
-				<div className='container'>
+				<div>
 					<Home />
 				</div>
 			</div>

@@ -33,7 +33,7 @@ class Header extends Component {
 						</Nav.Link>
 						<NavDropdown
 							title='Projects'
-							id='collasible-nav-dropdown'
+							id='collapsible-nav-dropdown'
 							className='text-warning'>
 							<NavDropdown.Item>
 								<Link to={'/project1'}>Quiz Game</Link>

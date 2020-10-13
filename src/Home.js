@@ -6,6 +6,7 @@ import carousel2 from './fleetcara.png';
 import quizImage from './gameheadef.png';
 import wizardImage from './wizard copy.png';
 import fleetImage from './fleet.png';
+import MyForm from './MyForm'
 
 class Home extends Component {
 	render() {
@@ -83,11 +84,12 @@ class Home extends Component {
 									Link to GitHub Repo
 								</a>
 							</Card.Link>
-							<Card.Link className='border border-primary p-2 text-center'>
-								{' '}
-								<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+
+							<Card.Link className='border border-primary p-2 text-center'
+							
+								 href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
 									Link to Deployed app
-								</a>
+								
 							</Card.Link>
 						</Card.Footer>
 					</Card>
@@ -170,64 +172,8 @@ class Home extends Component {
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
-				<div className='container contact-form'>
-					<form method='post'>
-						<h3 className='text-center'>Drop Thomas a Message</h3>
-						<div className='row'>
-							<div className='col-md-6'>
-								<div className='form-group'>
-									<input
-										type='text'
-										name='txtName'
-										className='form-control'
-										placeholder='Your Name *'
-										value=''
-									/>
-								</div>
-								<div className='form-group'>
-									<input
-										type='text'
-										name='txtEmail'
-										className='form-control'
-										placeholder='Your Email *'
-										value=''
-									/>
-								</div>
-								<div className='form-group'>
-									<input
-										type='text'
-										name='txtPhone'
-										className='form-control'
-										placeholder='Your Phone Number *'
-										value=''
-									/>
-								</div>
-								<div className='form-group'>
-									<input
-										type='submit'
-										name='btnSubmit'
-										className='btnContact'
-										value='Send Message'
-									/>
-								</div>
-							</div>
-							<div className='col-md-6'>
-								<div className='form-group'>
-									<textarea
-										name='txtMsg'
-										class='form-control'
-										placeholder='Your Message *'
-										style={{
-											backgroundImage: `url(${''})`,
-											backgroundSize: 'cover',
-											width: '100%',
-											fluid: 'yes',
-										}}></textarea>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
+				<MyForm />
+				
 			</>
 		);
 	}

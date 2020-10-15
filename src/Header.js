@@ -12,12 +12,10 @@ class Header extends Component {
 				expand='md'
 				style={{
 					minHeight: '10em',
-					backgroundColor: '#000555',
+					backgroundColor: 'white',
 				}}>
 				<Navbar.Brand>
-					<Link
-						to={'/home'}
-						expand='md'>
+					<Link to={'/home'} expand='md'>
 						thomas caldwell portfolio
 					</Link>
 				</Navbar.Brand>
@@ -25,16 +23,31 @@ class Header extends Component {
 				<Navbar.Collapse id='responsive-navbar-nav'>
 					<Nav className='mr-auto mx-auto'>
 						<Nav.Link>
-							<Link to={'/contact'}>Contact</Link>
+							<Link
+								to={'/contact'}
+								style={{
+									color: 'black',
+								}}>
+								Contact
+							</Link>
 						</Nav.Link>
 						<Nav.Link>
-							<Link to={'/about'}>About</Link>
+							<Link
+								to={'/about'}
+								style={{
+									color: 'black',
+								}}>
+								About
+							</Link>
 							<Route exact path='/about' />
 						</Nav.Link>
 						<NavDropdown
 							title='Projects'
 							id='collapsible-nav-dropdown'
-							className='text-warning'>
+							style={{
+								color: 'black',
+							}}>
+							
 							<NavDropdown.Item>
 								<Link to={'/project1'}>Quiz Game</Link>
 							</NavDropdown.Item>

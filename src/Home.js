@@ -1,66 +1,64 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, CardGroup, Carousel } from 'react-bootstrap';
+import {
+	Row,
+	Col,
+	Card,
+	CardGroup,
+	Carousel,
+	Jumbotron,
+	Container,
+} from 'react-bootstrap';
 import carousel1 from './fetchgoalcara.png';
-import portrait from './profile.image4.png';
+import portrait from './thomasportfolioimage.jpg';
 import carousel2 from './fleetcara.png';
 import quizImage from './gameheadef.png';
 import wizardImage from './wizard copy.png';
 import fleetImage from './fleet.png';
-import MyForm from './MyForm'
 
 class Home extends Component {
 	render() {
 		return (
 			<>
-				<Row className='mt-5'>
-					<Col md={6} className='p-5'>
-						<h1 className='p-2 bg-primary text-center text-light'>
-							About Thomas
-						</h1>
-						<Card>
-							<Card.Img variant='top' src={portrait} className='p-5' />
-							<Card.Body
-								style={{
-									backgroundColor: '#000555',
-								}}>
-								<Card.Text className='p-2 bg-primary text-center text-light'>
-									Thomas is a Web Developer from Huntington Beach CA.
-								</Card.Text>
+				<Jumbotron
+					fluid
+					style={{
+						backgroundImage: `url(${portrait})`,
+						height: '100vh',
+						backgroundSize: 'cover',
+						backgroundRepeat: 'no-repeat',
+						backgroundPosition: 'center',
+					}}>
+					<Container className='d-flex flex-column'>
+						<Card className='w-25 bg-transparent border-0'>
+							<Card.Body className='p-2 bg-transparent text-left text-black '>
+								Forward thinking and mature UI developer who can deal with all
+								tasks without fuss. Able to synthesize information and achieve a
+								solution to a problem and take the lead on that task. A skilled
+								designer with experience in front-end and back end web
+								applications. Looking to further skills and bring expertise,
+								leadership and creativity to the right role
 							</Card.Body>
 						</Card>
-					</Col>
-					<Col md={6} className='text-center'>
-						<Card className='mt-2 p-5 border-0'>
-							<Card.Body className='mt-2 mb-5 border-0'>
-								<Card.Text className='mt-2'>
-									<p>
-										Forward thinking and mature UI developer who can deal with
-										all tasks without fuss. Able to synthesize information and
-										achieve a solution to a problem and take the lead on that
-										task. A skilled designer with experience in front-end and
-										back end web applications. Looking to further skills and
-										bring expertise, leadership and creativity to the right role
-									</p>
-									<h1>Technologies</h1>
-									<ul className='text-center list-unstyled'>
-										<li>HTML</li>
-										<li>CSS</li>
-										<li>JavaScript</li>
-										<li>Python</li>
-										<li>Node JS</li>
-										<li>React</li>
-										<li>Django</li>
-										<li>Bootstrap</li>
-										<li>Adobe Creative Cloud</li>
-										<li>Wordpress</li>
-										<li>eCommerce</li>
-									</ul>
-									<h1>Certificates</h1>
-								</Card.Text>
+						<Card className='w-25 bg-transparent border-0'>
+							<Card.Body className='p-2 bg-transparent text-center text-black align-left'>
+								<h1>Technologies</h1>
+								<ul className='text-center list-unstyled'>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>Python</li>
+									<li>Node JS</li>
+									<li>React</li>
+									<li>Django</li>
+									<li>Bootstrap</li>
+									<li>Adobe Creative Cloud</li>
+									<li>Wordpress</li>
+									<li>eCommerce</li>
+								</ul>
 							</Card.Body>
 						</Card>
-					</Col>
-				</Row>
+					</Container>
+				</Jumbotron>
 				<CardGroup
 					className='mt-5 border-0'
 					style={{
@@ -85,11 +83,10 @@ class Home extends Component {
 								</a>
 							</Card.Link>
 
-							<Card.Link className='border border-primary p-2 text-center'
-							
-								 href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-									Link to Deployed app
-								
+							<Card.Link
+								className='border border-primary p-2 text-center'
+								href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+								Link to Deployed app
 							</Card.Link>
 						</Card.Footer>
 					</Card>
@@ -172,8 +169,6 @@ class Home extends Component {
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
-				<MyForm />
-				
 			</>
 		);
 	}

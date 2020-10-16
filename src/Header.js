@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Nav, Navbar,NavDropdown} from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
-import About from './About'
-import logo from './header.svg'
+import About from './About';
+import logo from './header.svg';
 
 class Header extends Component {
 	render() {
@@ -11,17 +11,33 @@ class Header extends Component {
 				collapseOnSelect
 				expand='md'
 				style={{
-					minHeight: '10em',
+					minHeight: '5em',
 					backgroundColor: 'white',
 				}}>
 				<Navbar.Brand>
-					<Link to={'/home'} expand='md'>
+					<Link
+						to={'/home'}
+						expand='md'
+						style={{
+							fontFamily: 'Montserrat',
+							fontSize: '1em',
+							textTransform: 'uppercase',
+							color: 'black',
+						}}>
 						thomas caldwell portfolio
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 				<Navbar.Collapse id='responsive-navbar-nav'>
-					<Nav className='mr-auto mx-auto'>
+					<Nav
+						className='mr-auto mx-auto'
+						style={{
+							fontFamily: 'Montserrat',
+							fontSize: '0.3em',
+							textTransform: 'uppercase',
+							color: 'black',
+							padding: '1em',
+						}}>
 						<Nav.Link>
 							<Link
 								to={'/contact'}
@@ -46,16 +62,39 @@ class Header extends Component {
 							id='collapsible-nav-dropdown'
 							style={{
 								color: 'black',
+								
 							}}>
-							
-							<NavDropdown.Item>
-								<Link to={'/project1'}>Quiz Game</Link>
+							<NavDropdown.Item
+							>
+								
+								<Link
+									to={'/project1'}
+									style={{
+										color: 'black',
+										fontSize: '0.3em',
+									}}>
+									Quiz Game
+								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link to={'/project2'}>Know Your Wizard</Link>
+								<Link
+									to={'/project2'}
+									style={{
+										color: 'black',
+										fontSize: '0.3em',
+									}}>
+									Know Your Wizard
+								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link to={'/project3'}>Fleet</Link>
+								<Link
+									to={'/project3'}
+									style={{
+										color: 'black',
+										fontSize: '0.3em',
+									}}>
+									Fleet
+								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>

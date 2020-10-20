@@ -17,7 +17,7 @@ class Header extends Component {
 				}}>
 				<Navbar.Brand>
 					<Link
-						to={'/home'}
+						to={'/'}
 						expand='md'
 						style={{
 							fontFamily: 'Montserrat',
@@ -41,7 +41,8 @@ class Header extends Component {
 						}}>
 						<Nav.Link>
 							<Link
-								to={'/contact'} 
+								to={'/contact'}
+
 								style={{
 									color: 'black',
 								}}>
@@ -69,7 +70,7 @@ class Header extends Component {
 							>
 								
 								<Link
-									to={'/project1'}
+									to={'/quizgame'}
 									style={{
 										color: 'black',
 										fontSize: '0.3em',
@@ -79,7 +80,7 @@ class Header extends Component {
 							</NavDropdown.Item>
 							<NavDropdown.Item>
 								<Link
-									to={'/project2'}
+									to={'/knowyourwizard'}
 									style={{
 										color: 'black',
 										fontSize: '0.3em',
@@ -89,7 +90,7 @@ class Header extends Component {
 							</NavDropdown.Item>
 							<NavDropdown.Item>
 								<Link
-									to={'/project3'}
+									to={'/fleet'}
 									style={{
 										color: 'black',
 										fontSize: '0.3em',

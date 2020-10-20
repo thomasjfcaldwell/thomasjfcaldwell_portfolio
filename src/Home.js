@@ -40,8 +40,8 @@ class Home extends Component {
 						lineHeight: '1.2em',
 					}}
 					className=' d-flex flex-column'>
-					<Card className=' m-1 border-0 bg-transparent p-1 text-center '>
-						<Card.Body sm={12} md={6} lg={6} className=' bg-transparent'>
+					<Card className=' m-5 border-0 bg-transparent p-5 text-center '>
+						<Card.Body className=' bg-transparent'>
 							<Card.Text
 								style={{
 									fontSize: '0.9em',
@@ -55,13 +55,14 @@ class Home extends Component {
 						</Card.Body>
 					</Card>
 					<Row>
-						<Col sm={6} md={6} lg={4}>
-							<Card className='bg-transparent border-0 mt-2'>
-								<Card.Body className=' text-left text-black mt-4'>
+						<Col sm={6} md={6} lg={6}>
+							<Card className='bg-transparent border-0 '>
+								<Card.Body className=' text-left text-black '>
 									<Card.Text
 										style={{
 											fontSize: '1.2em',
 											lineHeight: '1.2em',
+											padding: '4em'
 										}}>
 										Forward thinking and mature UI developer who can deal with
 										all tasks without fuss. Able to synthesize information and
@@ -73,7 +74,7 @@ class Home extends Component {
 								</Card.Body>
 							</Card>
 						</Col>
-						<Col sm={6} md={6} lg={8}>
+						<Col sm={6} md={6} lg={6}>
 							<ListGroup className=' bg-transparent border-0 text-center'>
 								<Card.Title
 									style={{
@@ -87,20 +88,21 @@ class Home extends Component {
 								<Row
 									style={{
 										fontFamily: 'Montserrat',
-										fontSize: '0.8em',
+										fontSize: '1.2em',
+										padding: '1em',
 									}}>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											HTML
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											CSS
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											JavaScript
 										</ListGroup.Item>
 									</Col>
@@ -109,19 +111,20 @@ class Home extends Component {
 									style={{
 										fontFamily: 'Montserrat',
 										fontSize: '0.8em',
+										padding: '1em',
 									}}>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											Python
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											Node JS
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											React
 										</ListGroup.Item>
 									</Col>
@@ -130,19 +133,20 @@ class Home extends Component {
 									style={{
 										fontFamily: 'Montserrat',
 										fontSize: '0.8em',
+										padding: '1em',
 									}}>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											Django
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											Bootstrap
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											Adobe Suite
 										</ListGroup.Item>
 									</Col>
@@ -151,19 +155,20 @@ class Home extends Component {
 									style={{
 										fontFamily: 'Montserrat',
 										fontSize: '0.8em',
+										padding: '1em',
 									}}>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border border-1 rounded text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border border-0 rounded text-center p-1 m-2'>
 											Wordpress
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											eCommerce
 										</ListGroup.Item>
 									</Col>
 									<Col>
-										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
 											eCommerce
 										</ListGroup.Item>
 									</Col>
@@ -174,14 +179,12 @@ class Home extends Component {
 				</Container>
 				<Container fluid className='text-center border-0 mt-4'>
 					<Card className='text-center border-0 mt-4'>
-						<Card.Title 
+						<Card.Title
 							style={{
 								color: 'black',
 								fontSize: '2em',
 								fontFamily: 'Montserrat',
 								textTransform: 'uppercase',
-								
-
 							}}>
 							Projects
 						</Card.Title>

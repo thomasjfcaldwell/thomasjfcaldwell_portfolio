@@ -3,6 +3,7 @@ import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import { Link, Route } from 'react-router-dom';
 import About from './About';
 import logo from './header.svg';
+import Contact from './Contact'
 
 class Header extends Component {
 	render() {
@@ -40,7 +41,7 @@ class Header extends Component {
 						}}>
 						<Nav.Link>
 							<Link
-								to={'/contact'}
+								to={'/contact'} 
 								style={{
 									color: 'black',
 								}}>

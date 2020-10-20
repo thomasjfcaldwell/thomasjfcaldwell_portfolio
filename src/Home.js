@@ -7,9 +7,11 @@ import {
 	Carousel,
 	Jumbotron,
 	Container,
+	ListGroup,
 } from 'react-bootstrap';
 import Header from './Header';
 import carousel1 from './fetchgoalcara.png';
+import carousel3 from './quizimage.png';
 import portrait from './thomasportfolioimage.jpg';
 import carousel2 from './fleetcara.png';
 import quizImage from './gameheadef.png';
@@ -53,7 +55,7 @@ class Home extends Component {
 						</Card.Body>
 					</Card>
 					<Row>
-						<Col sm={6} lg={3}>
+						<Col sm={6} md={6} lg={4}>
 							<Card className='bg-transparent border-0 mt-2'>
 								<Card.Body className=' text-left text-black mt-4'>
 									<Card.Text
@@ -71,38 +73,115 @@ class Home extends Component {
 								</Card.Body>
 							</Card>
 						</Col>
-						<Col sm={6}>
-							<Card className=' bg-transparent border-0 text-center'>
-								<Card.Body>
-									<Card.Title className='border-2'>
-										Some of his skills
-									</Card.Title>
-									<Card.Text className='text-black text-center'>
-										<Col>
-											<Row>HTML</Row>
-											<Row>CSS</Row>
-											<Row>JavaScript</Row>
-											<Row>Python</Row>
-											<Row>Node JS</Row>
-											<Row>React</Row>
-											<Row>Django</Row>
-											<Row>Bootstrap</Row>
-											<Row>Adobe Creative Cloud</Row>
-											<Row>Wordpress</Row>
-											<Row>eCommerce</Row>
-										</Col>
-									</Card.Text>
-								</Card.Body>
-							</Card>
+						<Col sm={6} md={6} lg={8}>
+							<ListGroup className=' bg-transparent border-0 text-center'>
+								<Card.Title
+									style={{
+										fontFamily: 'Montserrat',
+										fontSize: '1.2em',
+										textTransform: 'uppercase',
+										textDecoration: 'underline',
+									}}>
+									Some of his skills
+								</Card.Title>
+								<Row
+									style={{
+										fontFamily: 'Montserrat',
+										fontSize: '0.8em',
+									}}>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											HTML
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											CSS
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											JavaScript
+										</ListGroup.Item>
+									</Col>
+								</Row>
+								<Row
+									style={{
+										fontFamily: 'Montserrat',
+										fontSize: '0.8em',
+									}}>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											Python
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											Node JS
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											React
+										</ListGroup.Item>
+									</Col>
+								</Row>
+								<Row
+									style={{
+										fontFamily: 'Montserrat',
+										fontSize: '0.8em',
+									}}>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											Django
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											Bootstrap
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											Adobe Suite
+										</ListGroup.Item>
+									</Col>
+								</Row>
+								<Row
+									style={{
+										fontFamily: 'Montserrat',
+										fontSize: '0.8em',
+									}}>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border border-1 rounded text-center p-1 m-2'>
+											Wordpress
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											eCommerce
+										</ListGroup.Item>
+									</Col>
+									<Col>
+										<ListGroup.Item className=' bg-transparent border-1 text-center p-1 m-2'>
+											eCommerce
+										</ListGroup.Item>
+									</Col>
+								</Row>
+							</ListGroup>
 						</Col>
 					</Row>
 				</Container>
-				<Container fluid>
-					<Card className='text-center border-0 '>
-						<Card.Title
+				<Container fluid className='text-center border-0 mt-4'>
+					<Card className='text-center border-0 mt-4'>
+						<Card.Title 
 							style={{
-								color: 'blue',
-								fontSize: '4em',
+								color: 'black',
+								fontSize: '2em',
+								fontFamily: 'Montserrat',
+								textTransform: 'uppercase',
+								
+
 							}}>
 							Projects
 						</Card.Title>
@@ -132,7 +211,7 @@ class Home extends Component {
 									<Col sm={12} md={12}>
 										<Card.Link className='border border-dark p-2 text-center text-dark'>
 											{' '}
-											<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+											<a href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'>
 												Link to GitHub Repo
 											</a>
 										</Card.Link>
@@ -140,7 +219,7 @@ class Home extends Component {
 									<Col sm={6} md={12} className='mt-4 w-100'>
 										<Card.Link
 											className='border border-primary p-2 text-center'
-											href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+											href='https://evening-shore-26589.herokuapp.com/'>
 											Link to Deployed app
 										</Card.Link>
 									</Col>
@@ -166,7 +245,7 @@ class Home extends Component {
 									<Col sm={12} md={12}>
 										<Card.Link className='border border-primary p-2 text-center'>
 											{' '}
-											<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+											<a href='https://github.com/thomasjfcaldwell/know-your-wizard'>
 												Link to GitHub Repo
 											</a>
 										</Card.Link>
@@ -174,7 +253,7 @@ class Home extends Component {
 									<Col sm={6} md={12} className='mt-4 w-100'>
 										<Card.Link
 											className='border border-primary p-2 text-center'
-											href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+											href='https://knowyourwizard.herokuapp.com/wizards'>
 											Link to Deployed app
 										</Card.Link>
 									</Col>
@@ -211,10 +290,10 @@ class Home extends Component {
 						</Card>
 					</CardGroup>
 				</Container>
-				<Carousel fluid className='m-5 p-5' sm={1}>
+				<Carousel fluid className='m-5 p-5' sm={12}>
 					<Carousel.Item>
 						<img className='w-100' src={carousel1} alt='First slide' />
-						<Card>
+						<Card className='border-0 text-center'>
 							<Card.Body>
 								<Card.Text>
 									Fetch Goal App Displayed in Various Screen sizes
@@ -225,21 +304,21 @@ class Home extends Component {
 					<Carousel.Item>
 						<img className='d-block w-100' src={carousel2} alt='Third slide' />
 
-						<Card>
+						<Card className='border-0 text-center'>
 							<Card.Body>
 								<Card.Text>
-									Fetch Goal App Displayed in Various Screen sizes
+									Fleet App Displayed in Various Screen sizes
 								</Card.Text>
 							</Card.Body>
 						</Card>
 					</Carousel.Item>
 					<Carousel.Item>
-						<img className='d-block w-100' src={carousel1} alt='Third slide' />
+						<img className='d-block w-100' src={carousel3} alt='Third slide' />
 
-						<Card>
+						<Card className='border-0 text-center'>
 							<Card.Body>
 								<Card.Text>
-									Fetch Goal App Displayed in Various Screen sizes
+									Capitalsoftheworld quiz app as it would appear on a iPhone X
 								</Card.Text>
 							</Card.Body>
 						</Card>

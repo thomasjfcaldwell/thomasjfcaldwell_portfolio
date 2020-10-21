@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Knowyourwizard extends Component {
 	render() {
-		return <div>I fucking rule</div>;
+		return <div>Knowyourwizard info here</div>;
 	}
 }
 

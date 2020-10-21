@@ -34,17 +34,17 @@ class Header extends Component {
 						className='mr-auto mx-auto'
 						style={{
 							fontFamily: 'Montserrat',
-							fontSize: '0.3em',
+							fontSize: '1.5em',
 							textTransform: 'uppercase',
 							color: 'black',
-							padding: '1em',
+							
 						}}>
 						<Nav.Link>
 							<Link
 								to={'/contact'}
-
 								style={{
 									color: 'black',
+									
 								}}>
 								Contact
 							</Link>
@@ -64,16 +64,13 @@ class Header extends Component {
 							id='collapsible-nav-dropdown'
 							style={{
 								color: 'black',
-								
 							}}>
-							<NavDropdown.Item
-							>
-								
+							<NavDropdown.Item>
 								<Link
 									to={'/quizgame'}
 									style={{
 										color: 'black',
-										fontSize: '0.3em',
+										fontSize: '0.8em',
 									}}>
 									Quiz Game
 								</Link>
@@ -83,7 +80,7 @@ class Header extends Component {
 									to={'/knowyourwizard'}
 									style={{
 										color: 'black',
-										fontSize: '0.3em',
+										fontSize: '0.8em',
 									}}>
 									Know Your Wizard
 								</Link>
@@ -93,7 +90,7 @@ class Header extends Component {
 									to={'/fleet'}
 									style={{
 										color: 'black',
-										fontSize: '0.3em',
+										fontSize: '0.8em',
 									}}>
 									Fleet
 								</Link>

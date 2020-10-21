@@ -4,7 +4,7 @@ class QuizGame extends Component {
 	render() {
 		return <div> 
 
-            fucking Nirvana
+            Quiz App Information here
         </div>;
 	}
 }

@@ -8,6 +8,7 @@ import {
 	Jumbotron,
 	Container,
 	ListGroup,
+	Image,
 } from 'react-bootstrap';
 import Header from './Header';
 import carousel1 from './fetchgoalcara.png';
@@ -17,6 +18,18 @@ import carousel2 from './fleetcara.png';
 import quizImage from './gameheadef.png';
 import wizardImage from './wizard copy.png';
 import fleetImage from './fleet.png';
+import HTML from './icons/HTML.png';
+import CSS from './icons/CSS.png';
+import JAVASCRIPT from './icons/Javascript.png';
+import Python from './icons/python.png';
+import Nodejs from './icons/node.js.png';
+import Reactlogo from './icons/react.png';
+import Django from './icons/Django.png';
+import Bootstrap from './icons/bootstrap.png';
+import Adobe from './icons/adobe.png';
+import Wordpress from './icons/woodpress.png';
+import BigCommerce from './icons/BigCommerce.png';
+import Github from './icons/github.png';
 
 class Home extends Component {
 	render() {
@@ -32,150 +45,208 @@ class Home extends Component {
 						backgroundPosition: 'center',
 						margin: '0 auto',
 					}}></Jumbotron>
+
+				<Row>
+					<Col>
+						<Card className='border-0 bg-transparent text-center '>
+							<Card.Body className=' bg-transparent'>
+								<Card.Text
+									style={{
+										fontSize: '1.1em',
+										color: 'black',
+										lineHeight: '1.3em',
+										margin: '2em',
+									}}>
+									Thomas is a web developer and designer currently residing in
+									Huntington Beach, CA. Originally from The United Kingdom he
+									lives with his wife and pets. When he's not designing websites
+									he like long walks on the beach and surfing.
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+
+					<Col>
+						<Card className='bg-transparent border-0 '>
+							<Card.Body className=' text-center text-black '>
+								<Card.Text
+									style={{
+										fontSize: '1.1em',
+										lineHeight: '1.3em',
+										margin: '2em',
+									}}>
+									Forward thinking and mature UI developer who can deal with all
+									tasks without fuss. Able to synthesize information and achieve
+									a solution to a problem and take the lead on that task. A
+									skilled designer with experience in front-end and back end web
+									applications. Looking to further skills and bring expertise,
+									leadership and creativity to the right role
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+				</Row>
 				<Container
 					fluid
 					style={{
+						fontFamily: 'Montserrat',
 						fontSize: '1.2em',
-						backgroundColor: 'white',
-						lineHeight: '1.2em',
-					}}
-					className=' d-flex flex-column'>
-					<Card className=' m-5 border-0 bg-transparent p-5 text-center '>
-						<Card.Body className=' bg-transparent'>
-							<Card.Text
-								style={{
-									fontSize: '0.9em',
-									color: 'black',
-								}}>
-								Thomas is a web developer and designer currently residing in
-								Huntington Beach, CA. Originally from The United Kingdom he
-								lives with his wife and pets. When he's not designing websites
-								he like long walks on the beach and surfing.
-							</Card.Text>
-						</Card.Body>
-					</Card>
-					<Row>
-						<Col sm={6} md={6} lg={6}>
-							<Card className='bg-transparent border-0 '>
-								<Card.Body className=' text-left text-black '>
-									<Card.Text
+					}}>
+					<ListGroup className=' bg-transparent border-0 text-center'>
+						<Row>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center '>
+									<p>HTML</p>
+									<Image
+										src={HTML}
 										style={{
-											fontSize: '1.2em',
-											lineHeight: '1.2em',
-											padding: '4em'
-										}}>
-										Forward thinking and mature UI developer who can deal with
-										all tasks without fuss. Able to synthesize information and
-										achieve a solution to a problem and take the lead on that
-										task. A skilled designer with experience in front-end and
-										back end web applications. Looking to further skills and
-										bring expertise, leadership and creativity to the right role
-									</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col sm={6} md={6} lg={6}>
-							<ListGroup className=' bg-transparent border-0 text-center'>
-								<Card.Title
-									style={{
-										fontFamily: 'Montserrat',
-										fontSize: '1.2em',
-										textTransform: 'uppercase',
-										textDecoration: 'underline',
-									}}>
-									Some of his skills
-								</Card.Title>
-								<Row
-									style={{
-										fontFamily: 'Montserrat',
-										fontSize: '1.2em',
-										padding: '1em',
-									}}>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											HTML
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											CSS
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											JavaScript
-										</ListGroup.Item>
-									</Col>
-								</Row>
-								<Row
-									style={{
-										fontFamily: 'Montserrat',
-										fontSize: '0.8em',
-										padding: '1em',
-									}}>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											Python
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											Node JS
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											React
-										</ListGroup.Item>
-									</Col>
-								</Row>
-								<Row
-									style={{
-										fontFamily: 'Montserrat',
-										fontSize: '0.8em',
-										padding: '1em',
-									}}>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											Django
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											Bootstrap
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											Adobe Suite
-										</ListGroup.Item>
-									</Col>
-								</Row>
-								<Row
-									style={{
-										fontFamily: 'Montserrat',
-										fontSize: '0.8em',
-										padding: '1em',
-									}}>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border border-0 rounded text-center p-1 m-2'>
-											Wordpress
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											eCommerce
-										</ListGroup.Item>
-									</Col>
-									<Col>
-										<ListGroup.Item className=' bg-transparent border-0 text-center p-1 m-2'>
-											eCommerce
-										</ListGroup.Item>
-									</Col>
-								</Row>
-							</ListGroup>
-						</Col>
-					</Row>
+											maxHeight: '5em',
+											maxWidth: '5em',
+											padding: '0.2em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>CSS</p>
+									<Image
+										src={CSS}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>JavaScript</p>
+									<Image
+										src={JAVASCRIPT}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>Python</p>
+									<Image
+										src={Python}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+						</Row>
+
+						<Row>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>Node JS</p>
+									<Image
+										src={Nodejs}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>React</p>
+									<Image
+										src={Reactlogo}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>Django</p>
+									<Image
+										src={Django}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>Bootstrap</p>
+									<Image
+										src={Bootstrap}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+						</Row>
+
+						<Row>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>Adobe Suite</p>
+									<Image
+										src={Adobe}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border border-0 align-center '>
+									<p>Wordpress</p>
+									<Image
+										src={Wordpress}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
+									<p>BigCommerce</p>
+									<Image
+										src={BigCommerce}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+							<Col>
+								<ListGroup.Item className=' bg-transparent border-0 text-center '>
+									<p>Github</p>
+									<Image
+										src={Github}
+										style={{
+											maxHeight: '5em',
+											maxWidth: '5em',
+										}}
+									/>
+								</ListGroup.Item>
+							</Col>
+						</Row>
+					</ListGroup>
 				</Container>
 				<Container fluid className='text-center border-0 mt-4'>
 					<Card className='text-center border-0 mt-4'>
@@ -194,35 +265,31 @@ class Home extends Component {
 						style={{
 							fontFamily: 'Montserrat',
 						}}>
-						<Card className='border-0'>
-							<Card.Title className='mt-5 p-2 text-center'>
-								Quiz Game
+						<Card className='m-3 border-0'>
+							<Card.Title className='mt-5 text-center'>
+								Capital Cities Quiz Game
 							</Card.Title>
 							<Card.Img variant='top' src={quizImage} className='p-2' />
 							<Card.Body>
-								<Card.Text className='mt-2'>
-									Project made using vanilla JavaScript, html and Css. Get to
-									Travel the world and learn about capital cities.
+								<Card.Text>
+									An app made vanilla Javascript, HTML and CSS - My first ever
+									frontend Application
 								</Card.Text>
 							</Card.Body>
-
-							<Card.Footer className='mt-2 bg-white border-0 text-center w-100 '>
-								<Row
-									style={{
-										fontSize: '0.1',
-									}}>
-									<Col sm={12} md={12}>
-										<Card.Link className='border border-dark p-2 text-center text-dark'>
+							<Card.Footer className='mt-2 bg-white border-0 text-center'>
+								<Row>
+									<Col sm={6} md={12} lg={12}>
+										<Card.Link className='border border-primary p-2 text-center'>
 											{' '}
-											<a href='https://github.com/thomasjfcaldwell/project1-capitalsoftheworld-trivia-game'>
+											<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
 												Link to GitHub Repo
 											</a>
 										</Card.Link>
 									</Col>
-									<Col sm={6} md={12} className='mt-4 w-100'>
+									<Col sm={6} md={12} lg={12} className='mt-4'>
 										<Card.Link
 											className='border border-primary p-2 text-center'
-											href='https://evening-shore-26589.herokuapp.com/'>
+											href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
 											Link to Deployed app
 										</Card.Link>
 									</Col>
@@ -273,7 +340,7 @@ class Home extends Component {
 							</Card.Body>
 							<Card.Footer className='mt-2 bg-white border-0 text-center'>
 								<Row>
-									<Col sm={6} md={12}>
+									<Col sm={6} md={12} lg={12}>
 										<Card.Link className='border border-primary p-2 text-center'>
 											{' '}
 											<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
@@ -281,7 +348,7 @@ class Home extends Component {
 											</a>
 										</Card.Link>
 									</Col>
-									<Col sm={6} md={12} className='mt-4'>
+									<Col sm={6} md={12} lg={12} className='mt-4'>
 										<Card.Link
 											className='border border-primary p-2 text-center'
 											href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
@@ -293,6 +360,7 @@ class Home extends Component {
 						</Card>
 					</CardGroup>
 				</Container>
+
 				<Carousel fluid className='m-5 p-5' sm={12}>
 					<Carousel.Item>
 						<img className='w-100' src={carousel1} alt='First slide' />

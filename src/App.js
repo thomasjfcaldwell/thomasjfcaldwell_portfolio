@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch, Link, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
-import About from './About';
 import './App.scss';
 import Contact from './Contact';
 import QuizGame from './Quizgame';

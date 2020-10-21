@@ -43,12 +43,15 @@ class Contact extends Component {
 										</Form.Text>
 									</Form.Group>
 
-									<Form.Group controlId='formBasicPassword'>
-										<Form.Label>Password</Form.Label>
-										<Form.Control type='password' placeholder='Password' />
-									</Form.Group>
-									<Form.Group controlId='formBasicCheckbox'>
-										<Form.Check type='checkbox' label='Check me out' />
+									<Form.Group
+										style={{
+											minWidth: '3em',
+										}}>
+										<Form.Label>Write Message</Form.Label>
+										<Form.Control
+											type='message'
+											placeholder='write a message to Thomas here'
+										/>
 									</Form.Group>
 									<Button variant='primary' type='submit'>
 										Submit

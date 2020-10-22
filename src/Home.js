@@ -351,7 +351,7 @@ class Home extends Component {
 									<Col sm={6} md={12} lg={12} className='mt-4'>
 										<Card.Link
 											className='border border-primary p-2 text-center'
-											href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+											href='https://warm-brook-93750.herokuapp.com'>
 											Link to Deployed app
 										</Card.Link>
 									</Col>

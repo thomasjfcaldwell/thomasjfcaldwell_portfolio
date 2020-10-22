@@ -37,14 +37,12 @@ class Header extends Component {
 							fontSize: '1.5em',
 							textTransform: 'uppercase',
 							color: 'black',
-							
 						}}>
 						<Nav.Link>
 							<Link
 								to={'/contact'}
 								style={{
 									color: 'black',
-									
 								}}>
 								Contact
 							</Link>
@@ -83,6 +81,16 @@ class Header extends Component {
 										fontSize: '0.8em',
 									}}>
 									Fleet
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item>
+								<Link
+									to={'/fetchgoal'}
+									style={{
+										color: 'black',
+										fontSize: '0.8em',
+									}}>
+									FetchGoal
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>

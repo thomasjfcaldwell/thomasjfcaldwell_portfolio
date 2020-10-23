@@ -32,19 +32,19 @@ class FetchGoal extends Component {
 								Introduction to the App
 							</Card.Title>
 							<Card.Text>
-								
+								This app was made as a passion of made...'football' it was also my capstone project for my software immersive bootcamp. It was originally a paired developed app with another developer from my bootcamp. We split into frontend and backend with myself in charge of the frontend. I have since completed the backend myself to add experince and knowledge to my backend portfolio.
 							</Card.Text>
 							<Card.Title className='text-center'>
 								Requirements for the App
 							</Card.Title>
 							<Card.Text>
-								
+                                Simply the requirements were to be a complete product, have implemented thoughtful user stories, use something I didnt get taught in class and be deployed online.
 							</Card.Text>
 							<Card.Title className='text-center'>
 								Technologies used to develop App
 							</Card.Title>
 							<Card.Text>
-							
+                               The backend was built using Django and Python. The frontend I used React , React Bootstrap and SASS. 
 							</Card.Text>
 						</Col>
 					</Row>

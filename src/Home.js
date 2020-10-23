@@ -39,15 +39,15 @@ class Home extends Component {
 					fluid
 					style={{
 						backgroundImage: `url(${portrait})`,
-						height: '100vh',
+						height: '70vh',
 						backgroundSize: 'cover',
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
-						margin: '0 auto',
+						margin:'0 auto'
 					}}></Jumbotron>
 
 				<Row>
-					<Col>
+					<Col sm={6}>
 						<Card className='border-0 bg-transparent text-center '>
 							<Card.Body className=' bg-transparent'>
 								<Card.Text
@@ -55,7 +55,6 @@ class Home extends Component {
 										fontSize: '1.1em',
 										color: 'black',
 										lineHeight: '1.3em',
-										margin: '2em',
 									}}>
 									Thomas is a web developer and designer currently residing in
 									Huntington Beach, CA. Originally from The United Kingdom he
@@ -66,14 +65,13 @@ class Home extends Component {
 						</Card>
 					</Col>
 
-					<Col>
+					<Col sm={6}>
 						<Card className='bg-transparent border-0 '>
 							<Card.Body className=' text-center text-black '>
 								<Card.Text
 									style={{
 										fontSize: '1.1em',
 										lineHeight: '1.3em',
-										margin: '2em',
 									}}>
 									Forward thinking and mature UI developer who can deal with all
 									tasks without fuss. Able to synthesize information and achieve

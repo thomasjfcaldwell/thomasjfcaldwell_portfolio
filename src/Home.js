@@ -4,20 +4,15 @@ import {
 	Col,
 	Card,
 	CardGroup,
-	Carousel,
 	Jumbotron,
 	Container,
 	ListGroup,
 	Image,
 } from 'react-bootstrap';
-import Header from './Header';
-import carousel1 from './fetchgoalcara.png';
-import carousel3 from './quizimage.png';
-import portrait from './thomasportfolioimage.jpg';
-import carousel2 from './fleetcara.png';
-import quizImage from './gameheadef.png';
-import wizardImage from './wizard copy.png';
-import fleetImage from './fleet.png';
+import portrait from './images/thomasportfolioimage.jpg';
+import quizImage from './images/gameheadef.png';
+import wizardImage from './images/wizard copy.png';
+import fleetImage from './images/fleet.png';
 import HTML from './icons/HTML.png';
 import CSS from './icons/CSS.png';
 import JAVASCRIPT from './icons/Javascript.png';
@@ -43,7 +38,7 @@ class Home extends Component {
 						backgroundSize: 'cover',
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
-						margin:'0 auto'
+						margin: '0 auto',
 					}}></Jumbotron>
 
 				<Row>
@@ -88,160 +83,136 @@ class Home extends Component {
 					fluid
 					style={{
 						fontFamily: 'Montserrat',
-						fontSize: '1.2em',
+						fontSize: '0.6em',
 					}}>
 					<ListGroup className=' bg-transparent border-0 text-center'>
-						<Row>
+						<Row className='mt-1'>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center '>
-									<p>HTML</p>
-									<Image
-										src={HTML}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-											padding: '0.2em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>HTML</p>
+								<Image
+									src={HTML}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+										padding: '0.3em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>CSS</p>
-									<Image
-										src={CSS}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>CSS</p>
+								<Image
+									src={CSS}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>JavaScript</p>
-									<Image
-										src={JAVASCRIPT}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>JavaScript</p>
+								<Image
+									src={JAVASCRIPT}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>Python</p>
-									<Image
-										src={Python}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Python</p>
+								<Image
+									src={Python}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 						</Row>
 
-						<Row>
+						<Row className='mt-3'>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>Node JS</p>
-									<Image
-										src={Nodejs}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Node JS</p>
+								<Image
+									src={Nodejs}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>React</p>
-									<Image
-										src={Reactlogo}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>React</p>
+								<Image
+									src={Reactlogo}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>Django</p>
-									<Image
-										src={Django}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Django</p>
+								<Image
+									src={Django}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>Bootstrap</p>
-									<Image
-										src={Bootstrap}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Bootstrap</p>
+								<Image
+									src={Bootstrap}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 						</Row>
 
-						<Row>
+						<Row className='mt-3'>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>Adobe Suite</p>
-									<Image
-										src={Adobe}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Adobe Suite</p>
+								<Image
+									src={Adobe}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border border-0 align-center '>
-									<p>Wordpress</p>
-									<Image
-										src={Wordpress}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Wordpress</p>
+								<Image
+									src={Wordpress}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center  '>
-									<p>BigCommerce</p>
-									<Image
-										src={BigCommerce}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>BigCommerce</p>
+								<Image
+									src={BigCommerce}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 							<Col>
-								<ListGroup.Item className=' bg-transparent border-0 text-center '>
-									<p>Github</p>
-									<Image
-										src={Github}
-										style={{
-											maxHeight: '5em',
-											maxWidth: '5em',
-										}}
-									/>
-								</ListGroup.Item>
+								<p>Github</p>
+								<Image
+									src={Github}
+									style={{
+										maxHeight: '5em',
+										maxWidth: '5em',
+									}}
+								/>
 							</Col>
 						</Row>
 					</ListGroup>
@@ -359,40 +330,7 @@ class Home extends Component {
 					</CardGroup>
 				</Container>
 
-				<Carousel fluid className='m-5 p-5' sm={12}>
-					<Carousel.Item>
-						<img className='w-100' src={carousel1} alt='First slide' />
-						<Card className='border-0 text-center'>
-							<Card.Body>
-								<Card.Text>
-									Fetch Goal App Displayed in Various Screen sizes
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Carousel.Item>
-					<Carousel.Item>
-						<img className='d-block w-100' src={carousel2} alt='Third slide' />
-
-						<Card className='border-0 text-center'>
-							<Card.Body>
-								<Card.Text>
-									Fleet App Displayed in Various Screen sizes
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Carousel.Item>
-					<Carousel.Item>
-						<img className='d-block w-100' src={carousel3} alt='Third slide' />
-
-						<Card className='border-0 text-center'>
-							<Card.Body>
-								<Card.Text>
-									Capitalsoftheworld quiz app as it would appear on a iPhone X
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Carousel.Item>
-				</Carousel>
+				
 			</>
 		);
 	}

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
-import { Link, Route } from 'react-router-dom';
-
-import logo from './header.svg';
-import Contact from './Contact'
+import { Nav, Navbar, NavDropdown, } from 'react-bootstrap';
+import { Link, } from 'react-router-dom';
 
 class Header extends Component {
 	render() {

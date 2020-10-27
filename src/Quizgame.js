@@ -25,6 +25,7 @@ class QuizGame extends Component {
 										style={{
 											display: 'block',
 											margin: '0 auto',
+											maxWidth: '95%',
 										}}
 									/>
 								</Card.Body>
@@ -32,9 +33,7 @@ class QuizGame extends Component {
 						</Col>
 					</Row>
 					<Row>
-						<Col
-							className='text-left'
-							>
+						<Col className='text-left'>
 							<Card className='border-0'></Card>
 							<Card.Title className='text-center'>
 								Introduction to the App

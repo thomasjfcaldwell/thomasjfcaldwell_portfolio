@@ -23,6 +23,7 @@ class Fleet extends Component {
 										style={{
 											display: 'block',
 											margin: '0 auto',
+											maxWidth: '95%',
 										}}
 									/>
 								</Card.Body>

@@ -18,6 +18,7 @@ class Knowyourwizard extends Component {
 										style={{
 											display: 'block',
 											margin: '0 auto',
+											maxWidth: '95%',
 										}}
 										url='https://www.youtube.com/watch?v=QPN3fSQ7Myk'
 									/>

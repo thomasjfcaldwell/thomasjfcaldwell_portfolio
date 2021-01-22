@@ -6,7 +6,6 @@ import {
 	CardGroup,
 	Jumbotron,
 	Container,
-	ListGroup,
 	Image,
 } from 'react-bootstrap';
 import portrait from './images/thomasportfolioimage.jpg';
@@ -16,57 +15,98 @@ import fleetImage from './images/fleet.png';
 import HTML from './icons/HTML.png';
 import CSS from './icons/CSS.png';
 import JAVASCRIPT from './icons/Javascript.png';
-import Python from './icons/python.png';
-import Nodejs from './icons/node.png'
+
 import Reactlogo from './icons/react.png';
-import Django from './icons/Django.png';
 import Bootstrap from './icons/bootstrap.png';
 import Adobe from './icons/adobe.png';
 import Wordpress from './icons/woodpress.png';
 import BigCommerce from './icons/BigCommerce.png';
 import Github from './icons/github.png';
+import Typical from 'react-typical';
+
+import './App.scss';
 
 class Home extends Component {
 	render() {
 		return (
 			<>
 				<Jumbotron
+					sm={12}
+					className='header'
 					fluid
 					style={{
-						backgroundImage: `url(${portrait})`,
-						height: '70vh',
+						background: 'white',
+						height: '20vh',
 						backgroundSize: 'cover',
 						backgroundRepeat: 'no-repeat',
 						backgroundPosition: 'center',
 						margin: '0 auto',
-					}}></Jumbotron>
+					}}>
+					<div
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+							textAlign: 'center',
+							justifyContent: 'center',
+						}}>
+						<h1>Welcome To Thomas' Portfolio</h1>
+						<p>
+							Thomas is{' '}
+							<Typical
+								loop={Infinity}
+								wrapper='b'
+								steps={[
+									'a Developer',
+									1000,
+									'a Creator',
+									1000,
+									'an Imaginer',
+									1000,
+									'Changing the world one line of code at a time',
+									1000,
+								]}
+							/>
+						</p>
+					</div>
+				</Jumbotron>
 
-				<Row>
-					<Col sm={6}>
+				<Row className='mt-5'>
+					<Col lg={6} sm={12} className='text-center'>
+						<div>
+							<h1
+								style={{
+									color: 'black',
+									fontSize: '2em',
+									fontFamily: 'Montserrat',
+									textTransform: 'uppercase',
+								}}>
+								About THOMAS
+							</h1>
+						</div>
 						<Card className='border-0 bg-transparent text-center '>
 							<Card.Body className=' bg-transparent'>
 								<Card.Text
 									style={{
-										fontSize: '1.1em',
-										color: 'black',
-										lineHeight: '1.3em',
+										fontSize: '0.9em',
+										lineHeight: '1.9em',
 									}}>
 									Thomas is a web developer and designer currently residing in
 									Huntington Beach, CA. Originally from The United Kingdom he
 									lives with his wife and pets. When he's not designing websites
 									he like long walks on the beach and surfing.
 								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-
-					<Col sm={6}>
-						<Card className='bg-transparent border-0 '>
-							<Card.Body className=' text-center text-black '>
+								<Image
+									src={portrait}
+									style={{
+										width: '75%',
+										padding: '0.5em',
+									}}
+								/>
 								<Card.Text
 									style={{
-										fontSize: '1.1em',
-										lineHeight: '1.3em',
+										fontSize: '0.9em',
+										lineHeight: '1.9em',
 									}}>
 									Forward thinking and mature UI developer who can deal with all
 									tasks without fuss. Able to synthesize information and achieve
@@ -78,145 +118,98 @@ class Home extends Component {
 							</Card.Body>
 						</Card>
 					</Col>
-				</Row>
-				<Container
-					fluid
-					style={{
-						fontFamily: 'Montserrat',
-						fontSize: '0.6em',
-					}}>
-					<ListGroup className=' bg-transparent border-0 text-center'>
-						<Row className='mt-1'>
-							<Col>
+					<Col sm={12} lg={6} className='text-center'>
+						<div>
+							<h1
+								style={{
+									color: 'black',
+									fontSize: '2em',
+									fontFamily: 'Montserrat',
+									textTransform: 'uppercase',
+								}}>
+								SKILLS
+							</h1>
+						</div>
+						<Row
+							style={{
+								width: '100%',
+								display: 'flex',
+								flexDirection: 'row',
+							}}>
+							<div className='skills'>
 								<p>HTML</p>
-								<Image
-									src={HTML}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-										padding: '0.3em',
-									}}
-								/>
-							</Col>
-							<Col>
+								<Image className='skillsImage' src={HTML} alt='htmllogo' />
+							</div>
+							<div className='skills'>
 								<p>CSS</p>
-								<Image
-									src={CSS}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
-							<Col>
+								<Image className='skillsImage' src={CSS} alt='CSSlogo' />
+							</div>
+							<div className='skills'>
 								<p>JavaScript</p>
 								<Image
+									className='skillsImage'
 									src={JAVASCRIPT}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
+									alt='javascriptLogo'
 								/>
-							</Col>
-							<Col>
-								<p>Python</p>
-								<Image
-									src={Python}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
+							</div>
 						</Row>
-
-						<Row className='mt-3'>
-							<Col>
-								<p>Node JS</p>
-								<Image
-									src={Nodejs}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
-							<Col>
+						<Row
+							style={{
+								width: '100%',
+								display: 'flex',
+								flexDirection: 'row',
+							}}>
+							<div className='skills'>
 								<p>React</p>
-								<Image
-									src={Reactlogo}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
-							<Col>
-								<p>Django</p>
-								<Image
-									src={Django}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
-							<Col>
+								<Image className='skillsImage' src={Reactlogo} alt='htmllogo' />
+							</div>
+							<div className='skills'>
 								<p>Bootstrap</p>
 								<Image
+									className='skillsImage'
 									src={Bootstrap}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
+									alt='bootstraplogo'
 								/>
-							</Col>
-						</Row>
-
-						<Row className='mt-3'>
-							<Col>
+							</div>
+							<div className='skills'>
 								<p>Adobe Suite</p>
 								<Image
+									className='skillsImage'
 									src={Adobe}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
+									alt='javascriptLogo'
 								/>
-							</Col>
-							<Col>
+							</div>
+						</Row>
+						<Row
+							style={{
+								width: '100%',
+								display: 'flex',
+								flexDirection: 'row',
+							}}>
+							<div className='skills'>
 								<p>Wordpress</p>
-								<Image
-									src={Wordpress}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
-								/>
-							</Col>
-							<Col>
+								<Image className='skillsImage' src={Wordpress} alt='htmllogo' />
+							</div>
+							<div className='skills'>
 								<p>BigCommerce</p>
 								<Image
+									className='skillsImage'
 									src={BigCommerce}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
+									alt='CSSlogo'
 								/>
-							</Col>
-							<Col>
+							</div>
+							<div className='skills'>
 								<p>Github</p>
 								<Image
+									className='skillsImage'
 									src={Github}
-									style={{
-										maxHeight: '5em',
-										maxWidth: '5em',
-									}}
+									alt='javascriptLogo'
 								/>
-							</Col>
+							</div>
 						</Row>
-					</ListGroup>
-				</Container>
+					</Col>
+				</Row>
+
 				<Container fluid className='text-center border-0 mt-4'>
 					<Card className='text-center border-0 mt-4'>
 						<Card.Title
@@ -329,8 +322,6 @@ class Home extends Component {
 						</Card>
 					</CardGroup>
 				</Container>
-
-				
 			</>
 		);
 	}

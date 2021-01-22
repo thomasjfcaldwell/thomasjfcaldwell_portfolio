@@ -17,7 +17,7 @@ import HTML from './icons/HTML.png';
 import CSS from './icons/CSS.png';
 import JAVASCRIPT from './icons/Javascript.png';
 import Python from './icons/python.png';
-import Nodejs from './icons/node.js.png';
+import Nodejs from './icons/node.png'
 import Reactlogo from './icons/react.png';
 import Django from './icons/Django.png';
 import Bootstrap from './icons/bootstrap.png';

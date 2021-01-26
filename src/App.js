@@ -8,6 +8,8 @@ import QuizGame from './Quizgame';
 import Knowyourwizard from './Knowyourwizard';
 import Fleet from './Fleet';
 import FetchGoal from './FetchGoal';
+import Picnics from './Picnics'
+import Coffee from './Coffee'
 class App extends Component {
 	render() {
 		return (
@@ -19,6 +21,8 @@ class App extends Component {
 					<Link to='/knowyourwizard'></Link>
 					<Link to='/fleet'></Link>
 					<Link to='/fetchgoal'></Link>
+					<Link to='/picnics'></Link>
+					<Link to='/coffee'></Link>
 				</nav>
 
 				<main>
@@ -31,6 +35,8 @@ class App extends Component {
 					<Route exact path='/knowyourwizard' component={Knowyourwizard} />
 					<Route exact path='/fleet' component={Fleet} />
 					<Route exact path='/fetchgoal' component={FetchGoal} />
+					<Route exact path='/picnics' component={Picnics} />
+					<Route exact path='/coffee' component={Coffee} />
 				</main>
 			</div>
 		);

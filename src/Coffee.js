@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import {
-	Row,
-	Col,
-	Card,
-	Container,
-} from 'react-bootstrap';
+import { Row, Col, Card, Container } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
-import './App.scss'
+import './App.scss';
 
-class FetchGoal extends Component {
+class Coffee extends Component {
 	render() {
 		return (
 			<div>
@@ -21,7 +16,7 @@ class FetchGoal extends Component {
 							textTransform: 'uppercase',
 							textAlign: 'center',
 						}}>
-						FetchGoal App
+						Need Coffee??
 					</h1>
 				</div>
 				<Container
@@ -87,7 +82,7 @@ class FetchGoal extends Component {
 							fontFamily: 'Montserrat',
 							textTransform: 'uppercase',
 							textAlign: 'center',
-							margin: '1em'
+							margin: '1em',
 						}}>
 						Backend - Django and Python Frontend - React and React Bootstrap
 					</h4>
@@ -97,4 +92,4 @@ class FetchGoal extends Component {
 	}
 }
 
-export default FetchGoal;
+export default Coffee;

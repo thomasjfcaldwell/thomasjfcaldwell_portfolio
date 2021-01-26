@@ -37,6 +37,15 @@ class Header extends Component {
 						}}>
 						<Nav.Link>
 							<Link
+								to={'/'}
+								style={{
+									color: 'black',
+								}}>
+								Home
+							</Link>
+						</Nav.Link>
+						<Nav.Link>
+							<Link
 								to={'/contact'}
 								style={{
 									color: 'black',
@@ -45,7 +54,7 @@ class Header extends Component {
 							</Link>
 						</Nav.Link>
 						<NavDropdown
-							title='Projects'
+							// title='Projects'
 							id='collapsible-nav-dropdown'
 							style={{
 								color: 'black',

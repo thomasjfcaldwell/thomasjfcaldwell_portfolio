@@ -5,14 +5,25 @@ $mainColor: #55cbda;
 $primary: #000555;
 
 .body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
 }
 
 a {
     font-size: 0.8em;
     text-decoration: none;
-    color: black;
+}
+
+.projects{
+    padding:20px
+}
+.projectimage {
+    width: 80%;
+}
+
+.projectsText{
+    font-size: 0.7em;
+    padding: 10px;
 }
 
 .skills{
@@ -21,13 +32,83 @@ a {
     padding:10px;
 }
 
+.links {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    margin: 0 auto;  
+}
+
+.links a {
+    margin: 2px;
+    color:#272727
+}
+
+.skills p {
+    color: #272727;
+}
+
 @media screen and (max-width: 500px) {
 	.header {
 		height: 90vh;
 	}
 	
 }
+.title {
+    text-align: center;
+    font-size: 0.5em;
+    color:#14A76C;
+    text-transform: uppercase;
+    margin:0.5em;
+}
 
 .skillsImage{
     width: 40%;
+    -webkit-filter: drop-shadow(1px 1px 1px white);
+  filter: drop-shadow(1px 1px 2px white);
+    
 }
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #90EE90;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #3CB371; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#90EE90;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#3CB371; }

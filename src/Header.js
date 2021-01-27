@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavDropdown, } from 'react-bootstrap';
-import { Link, } from 'react-router-dom';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
 	render() {
@@ -8,9 +8,9 @@ class Header extends Component {
 			<Navbar
 				collapseOnSelect
 				expand='md'
+				bg='transparent'
 				style={{
 					minHeight: '5em',
-					backgroundColor: 'white',
 				}}>
 				<Navbar.Brand>
 					<Link
@@ -26,9 +26,10 @@ class Header extends Component {
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />
-				<Navbar.Collapse id='responsive-navbar-nav'>
+				<Navbar.Collapse id='responsive-navbar-nav' bg='transparent'>
 					<Nav
 						className='mr-auto mx-auto'
+						bg='transparent'
 						style={{
 							fontFamily: 'Montserrat',
 							fontSize: '1.5em',
@@ -37,6 +38,7 @@ class Header extends Component {
 						}}>
 						<Nav.Link>
 							<Link
+								bg='transparent'
 								to={'/'}
 								style={{
 									color: 'black',
@@ -54,10 +56,14 @@ class Header extends Component {
 							</Link>
 						</Nav.Link>
 						<NavDropdown
-							// title='Projects'
+							title='Projects'
 							id='collapsible-nav-dropdown'
 							style={{
 								color: 'black',
+								fontSize: '0.8em',
+								marginTop: '4px',
+								backgroundColor: 'transparent',
+								border: 'none',
 							}}>
 							<NavDropdown.Item>
 								<Link
@@ -65,6 +71,7 @@ class Header extends Component {
 									style={{
 										color: 'black',
 										fontSize: '0.8em',
+										// backgroundColor:'blue'
 									}}>
 									Quiz Game
 								</Link>
@@ -97,6 +104,26 @@ class Header extends Component {
 										fontSize: '0.8em',
 									}}>
 									FetchGoal
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item>
+								<Link
+									to={'/picnics'}
+									style={{
+										color: 'black',
+										fontSize: '0.8em',
+									}}>
+									Pop Up Picnics
+								</Link>
+							</NavDropdown.Item>
+							<NavDropdown.Item>
+								<Link
+									to={'/coffee'}
+									style={{
+										color: 'black',
+										fontSize: '0.8em',
+									}}>
+									Need Coffee??
 								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>

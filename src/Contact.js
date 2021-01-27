@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import { Container, Form, Col, Row } from 'react-bootstrap';
+import resume from './images/thomasCaldwellResume.jpg'
+import './App.scss'
 
 
 class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<Container fluid>
+				<Container
+					fluid
+					style={{
+						width: '90%',
+						padding: '50px',
+					}}>
 					<Row>
 						<Col lg={6} sm={12}>
 							<h1
@@ -26,6 +33,7 @@ class Contact extends Component {
 								style={{
 									display: 'flex',
 									flexDirection: 'column',
+									width: '100%',
 								}}>
 								<div>
 									<input
@@ -54,6 +62,90 @@ class Contact extends Component {
 								</div>
 								<input type='submit' value='Submit'></input>
 							</Form>
+						</Col>
+						<Col
+							lg={6}
+							sm={12}
+							style={{
+								background: '#272727',
+								textAlign: 'center',
+								color: 'white',
+								alignItems: 'center',
+								justifyContent: 'center',
+								padding: '0.5em',
+							}}>
+							<div>
+								<h1
+									style={{
+										color: '#14A76C',
+										fontSize: '2em',
+										fontFamily: 'Montserrat',
+										textTransform: 'uppercase',
+									}}>
+									MORE INformation
+								</h1>
+							</div>
+							<Row
+								style={{
+									width: '100%',
+									alignItems: 'center',
+									textAlign: 'center',
+									justifyContent: 'center',
+									marginTop: '50px'
+								}}>
+								<Col
+									style={{
+										width: '50%',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										textAlign: 'center',
+										justifyContent: 'center',
+									}}>
+									<h5>Resume</h5>
+									<img
+										src={resume}
+										alt='thomasResume'
+										style={{
+											width: '75%',
+										}}
+									/>
+									<a
+										href='https://drive.google.com/file/d/1vwa_ukC3V472FisHWRCGSvCnz8X6PrFt/view?usp=sharing'
+										style={{
+											color: '#14A76C',
+										}}>
+										See Resume Here
+									</a>
+								</Col>
+								<Col
+									style={{
+										width: '50%',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										textAlign: 'center',
+										justifyContent: 'center',
+									}}>
+									<h3>Contact Information</h3>
+									<p>Email</p>
+									<a
+										href='mailto:thomasjfcaldwell@gmail.com'
+										className='contactLinks'>
+										thomasjfcaldwell@gmail.com
+									</a>
+									<p>Phone</p>
+									<a href='tel:714-595-6633' className='contactLinks'>
+										714-595-6633
+									</a>
+									<p>Linkedin</p>
+									<a
+										href='https://www.linkedin.com/in/thomas-caldwell-huntingtonbeach/'
+										className='contactLinks'>
+										thomas-caldwell-huntingtonbeach
+									</a>
+								</Col>
+							</Row>
 						</Col>
 					</Row>
 				</Container>

@@ -5,34 +5,49 @@ import ReactPlayer from 'react-player';
 class Knowyourwizard extends Component {
 	render() {
 		return (
-			<div>
-				<h3 fluid className='text-center bg-info p-4 mt-3'>
-					Know your Wizard app
-				</h3>
-				<Container fluid>
-					<Row>
-						<Col>
-							<Card className='border-0'>
-								<Card.Body className='text-center'>
+			<>
+				<div>
+					<div>
+						<h1
+							style={{
+								color: '#14A76C',
+								fontSize: '2em',
+								fontFamily: 'Montserrat',
+								textTransform: 'uppercase',
+								textAlign: 'center',
+							}}>
+							Know Your Wizard App
+						</h1>
+					</div>
+					<Container
+						fluid
+						style={{
+							fontFamily: 'Montserrat',
+						}}>
+						<Row
+							style={{
+								alignItems: 'center',
+								justifyContent: 'center',
+							}}>
+							<Card className='border-0' sm={12}>
+								<Card.Body>
 									<ReactPlayer
+										url='https://www.youtube.com/watch?v=QPN3fSQ7Myk'
 										style={{
 											display: 'block',
 											margin: '0 auto',
 											maxWidth: '95%',
 										}}
-										url='https://www.youtube.com/watch?v=QPN3fSQ7Myk'
 									/>
 								</Card.Body>
 							</Card>
-						</Col>
-					</Row>
-					<Row>
-						<Col className='text-left'>
-							<Card className='border-0 p-4'>
-								<Card.Title className='text-center'>
+						</Row>
+						<Row>
+							<Col className='text-left' lg={4}>
+								<Card.Title className='title'>
 									Introduction to the App
 								</Card.Title>
-								<Card.Text className='m-5'>
+								<Card.Text>
 									This app was developed while I was attending a immersive
 									software developer bootcamp by General Assembly. Initially I
 									had planned to do an app where the user would be able to
@@ -46,44 +61,44 @@ class Knowyourwizard extends Component {
 									or non fans to learn about each character of the Harry Potter
 									World
 								</Card.Text>
-								<Card.Title className='text-center'>
+							</Col>
+							<Col lg={4}>
+								<Card.Title className='title'>
 									Requirements for the App
 								</Card.Title>
-								<Card.Text className='m-5'>
+								<Card.Text>
 									I was tasked to develop a working interactive React
 									application and to include data from a third-party API. Have 4
 									separate components and be deployed to the web.
 								</Card.Text>
-								<Card.Title className='text-center'>
+							</Col>
+							<Col lg={4}>
+								<Card.Title className='title'>
 									Technologies used to develop App
 								</Card.Title>
-								<Card.Text className='m-5'>
+								<Card.Text>
 									I used React for the framework to develop this App and React
 									Bootstrap for the styling. I also used Axios to bring in the
 									data from the third party API and React Router for rendering
 									multiple pages.
 								</Card.Text>
-								<Card.Footer className='bg-white border-0 text-center'>
-									<Card.Link className='border border-primary p-2 text-center'>
-										{' '}
-										<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-											Link to GitHub Repo
-										</a>
-									</Card.Link>
-									<Card.Link
-										className='border border-primary p-2 text-center'
-										href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										Link to Deployed app
-									</Card.Link>
-								</Card.Footer>
-							</Card>
-						</Col>
-					</Row>
-				</Container>
-				<p className='text-center bg-info p-3 mt-3'>
-					App built with React and React BootStrap
-				</p>
-			</div>
+							</Col>
+						</Row>
+					</Container>
+					<div>
+						<h4
+							style={{
+								color: '#14A76C',
+								fontFamily: 'Montserrat',
+								textTransform: 'uppercase',
+								textAlign: 'center',
+								margin: '1em',
+							}}>
+							App Built Using React and React Bootstrap
+						</h4>
+					</div>
+				</div>
+			</>
 		);
 	}
 }

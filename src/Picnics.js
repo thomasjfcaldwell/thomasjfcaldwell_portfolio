@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Container } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
+import { Row, Col, Card, Container, Image } from 'react-bootstrap';
 import './App.scss';
+
+import picnics from './images/popuppicnics.jpg'
 
 class Picnics extends Component {
 	render() {
@@ -31,12 +32,12 @@ class Picnics extends Component {
 						}}>
 						<Card className='border-0' sm={12}>
 							<Card.Body>
-								<ReactPlayer
-									url='https://www.youtube.com/watch?v=cJvsoaKnkIs'
+								<Image
+									src={picnics}
 									style={{
 										display: 'block',
 										margin: '0 auto',
-										maxWidth: '95%',
+										maxWidth: '50%',
 									}}
 								/>
 							</Card.Body>
@@ -46,12 +47,7 @@ class Picnics extends Component {
 						<Col className='text-left' lg={4}>
 							<Card.Title className='title'>Introduction to the App</Card.Title>
 							<Card.Text>
-								This app was made as a passion of made...'football' it was also
-								my capstone project for my software immersive bootcamp. It was
-								originally a paired developed app with another developer from my
-								bootcamp. We split into frontend and backend with myself in
-								charge of the frontend. I have since completed the backend
-								myself to add experince and knowledge to my backend portfolio.
+								This Website was built for a local Events company who had to change the way they did business due to COVID-19. Its a branch off from their main site and is promoting a new business that offers social distancing picnics. I planned the site from start to finish and produced all contents myself, including photography.
 							</Card.Text>
 						</Col>
 						<Col lg={4}>
@@ -59,9 +55,7 @@ class Picnics extends Component {
 								Requirements for the App
 							</Card.Title>
 							<Card.Text>
-								Simply the requirements were to be a complete product, have
-								implemented thoughtful user stories, use something I didnt get
-								taught in class and be deployed online.
+								The business owner wanted it to look simple but professional. Also they wanted potential customers to be able view prices and send a request to book an event. 
 							</Card.Text>
 						</Col>
 						<Col lg={4}>
@@ -69,8 +63,7 @@ class Picnics extends Component {
 								Technologies used to develop App
 							</Card.Title>
 							<Card.Text>
-								The backend was built using Django and Python. The frontend I
-								used React , React Bootstrap and SASS.
+								I used React for the whole site. For the booking and contact forms I used customized google forms. The site is styled with React-Bootstrap
 							</Card.Text>
 						</Col>
 					</Row>
@@ -84,7 +77,7 @@ class Picnics extends Component {
 							textAlign: 'center',
 							margin: '1em',
 						}}>
-						Backend - Django and Python Frontend - React and React Bootstrap
+						React and React Bootstrap
 					</h4>
 				</div>
 			</div>

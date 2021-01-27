@@ -68,14 +68,14 @@ class Home extends Component {
 						</div>
 					</Jumbotron>
 
-					<Row className='mt-5'>
+					<Row className='m-5'>
 						<Col
 							lg={6}
 							sm={12}
 							className='text-center'
 							style={{
 								backgroundColor: '#272727',
-								padding: '0.5em',
+								
 							}}>
 							<div>
 								<h1

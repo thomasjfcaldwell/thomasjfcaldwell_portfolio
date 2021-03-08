@@ -67,185 +67,167 @@ class Home extends Component {
 							</p>
 						</div>
 					</Jumbotron>
-
-					<Row className='m-5'>
-						<Col
-							lg={6}
-							sm={12}
-							className='text-center'
-							style={{
-								backgroundColor: '#272727',
-								
-							}}>
-							<div>
-								<h1
-									style={{
-										color: '#14A76C',
-										fontSize: '2em',
-										fontFamily: 'Montserrat',
-										textTransform: 'uppercase',
-									}}>
-									About THOMAS
-								</h1>
-							</div>
-							<Card className='border-0 bg-transparent text-center '>
-								<Card.Body className=' bg-transparent'>
-									<Card.Text
+					<Container fluid>
+						<Row className='m-5'>
+							<Col
+								lg={6}
+								sm={12}
+								className='text-center'
+								style={{
+									backgroundColor: '#272727',
+								}}>
+								<div>
+									<h1
 										style={{
-											fontSize: '0.9em',
-											lineHeight: '1.2em',
-											color: 'white',
+											color: '#14A76C',
+											fontSize: '2em',
+											fontFamily: 'Montserrat',
+											textTransform: 'uppercase',
 										}}>
-										Thomas is a web developer and designer currently residing in
-										Huntington Beach, CA. Originally from The United Kingdom he
-										lives with his wife and pets. When he's not designing
-										websites he like long walks on the beach and surfing.
-									</Card.Text>
-									<Image
-										src={portrait}
+										About THOMAS
+									</h1>
+								</div>
+								<Card className='border-0 bg-transparent text-center '>
+									<Card.Body className=' bg-transparent'>
+										<Card.Text
+											style={{
+												fontSize: '0.9em',
+												lineHeight: '1.2em',
+												color: 'white',
+											}}>
+											Thomas is a web developer and designer currently residing
+											in Huntington Beach, CA. Originally from The United
+											Kingdom he lives with his wife and pets. When he's not
+											designing websites he like long walks on the beach and
+											surfing.
+										</Card.Text>
+										<Image
+											src={portrait}
+											style={{
+												width: '75%',
+												padding: '0.5em',
+											}}
+										/>
+										<Card.Text
+											style={{
+												fontSize: '0.9em',
+												lineHeight: '1.2em',
+												color: 'white',
+											}}>
+											Forward thinking and mature UI developer who can deal with
+											all tasks without fuss. Able to synthesize information and
+											achieve a solution to a problem and take the lead on that
+											task. A skilled designer with experience in front-end and
+											back end web applications. Looking to further skills and
+											bring expertise, leadership and creativity to the right
+											role
+										</Card.Text>
+									</Card.Body>
+								</Card>
+							</Col>
+							<Col
+								sm={12}
+								lg={6}
+								style={{
+									backgroundColor: 'white',
+								}}>
+								<div>
+									<h1
 										style={{
-											width: '75%',
-											padding: '0.5em',
-										}}
-									/>
-									<Card.Text
-										style={{
-											fontSize: '0.9em',
-											lineHeight: '1.2em',
-											color: 'white',
+											color: '#14A76C',
+											fontSize: '2em',
+											textAlign: 'center',
+											fontFamily: 'Montserrat',
+											textTransform: 'uppercase',
 										}}>
-										Forward thinking and mature UI developer who can deal with
-										all tasks without fuss. Able to synthesize information and
-										achieve a solution to a problem and take the lead on that
-										task. A skilled designer with experience in front-end and
-										back end web applications. Looking to further skills and
-										bring expertise, leadership and creativity to the right role
-									</Card.Text>
-								</Card.Body>
-							</Card>
-						</Col>
-						<Col
-							sm={12}
-							lg={6}
-							style={{
-								backgroundColor: 'white',
-							}}>
-							<div>
-								<h1
-									style={{
-										color: '#14A76C',
-										fontSize: '2em',
-										textAlign: 'center',
-										fontFamily: 'Montserrat',
-										textTransform: 'uppercase',
-									}}>
-									SKILLS
-								</h1>
-							</div>
-							<Row
-								style={{
-									width: '100%',
-									display: 'flex',
-									flexDirection: 'row',
-									marginTop: '3em',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}}>
-								<div className='skills'>
-									<p>HTML</p>
-									<Image className='skillsImage' src={HTML} alt='htmllogo' />
+										SKILLS
+									</h1>
 								</div>
-								<div className='skills'>
-									<p>CSS</p>
-									<Image className='skillsImage' src={CSS} alt='CSSlogo' />
-								</div>
-								<div className='skills'>
-									<p>JavaScript</p>
-									<Image
-										className='skillsImage'
-										src={JAVASCRIPT}
-										alt='javascriptLogo'
-									/>
-								</div>
-							</Row>
-							<Row
-								style={{
-									width: '100%',
-									display: 'flex',
-									flexDirection: 'row',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}}>
-								<div className='skills'>
-									<p>React</p>
-									<Image
-										className='skillsImage'
-										src={Reactlogo}
-										alt='htmllogo'
-									/>
-								</div>
-								<div className='skills'>
-									<p>Bootstrap</p>
-									<Image
-										className='skillsImage'
-										src={Bootstrap}
-										alt='bootstraplogo'
-									/>
-								</div>
-								<div className='skills'>
-									<p>Adobe Suite</p>
-									<Image
-										className='skillsImage'
-										src={Adobe}
-										alt='javascriptLogo'
-									/>
-								</div>
-							</Row>
-							<Row
-								style={{
-									width: '100%',
-									display: 'flex',
-									flexDirection: 'row',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}}>
-								<div className='skills'>
-									<p>Wordpress</p>
-									<Image
-										className='skillsImage'
-										src={Wordpress}
-										alt='htmllogo'
-									/>
-								</div>
-								<div className='skills'>
-									<p>BigCommerce</p>
-									<Image
-										className='skillsImage'
-										src={BigCommerce}
-										alt='CSSlogo'
-									/>
-								</div>
-								<div className='skills'>
-									<p>Github</p>
-									<Image
-										className='skillsImage'
-										src={Github}
-										alt='javascriptLogo'
-									/>
-								</div>
-							</Row>
-						</Col>
-					</Row>
+								<Container>
+									<Row>
+										<div className='skills'>
+											<p>HTML</p>
+											<Image
+												className='skillsImage'
+												src={HTML}
+												alt='htmllogo'
+											/>
+										</div>
+										<div className='skills'>
+											<p>CSS</p>
+											<Image className='skillsImage' src={CSS} alt='CSSlogo' />
+										</div>
+										<div className='skills'>
+											<p>JavaScript</p>
+											<Image
+												className='skillsImage'
+												src={JAVASCRIPT}
+												alt='javascriptLogo'
+											/>
+										</div>
+									</Row>
+								</Container>
+								<Container>
+									<Row>
+										<div className='skills'>
+											<p>React</p>
+											<Image
+												className='skillsImage'
+												src={Reactlogo}
+												alt='htmllogo'
+											/>
+										</div>
+										<div className='skills'>
+											<p>Bootstrap</p>
+											<Image
+												className='skillsImage'
+												src={Bootstrap}
+												alt='bootstraplogo'
+											/>
+										</div>
+										<div className='skills'>
+											<p>Adobe Suite</p>
+											<Image
+												className='skillsImage'
+												src={Adobe}
+												alt='javascriptLogo'
+											/>
+										</div>
+									</Row>
+								</Container>
+								<Container>
+									<Row>
+										<div className='skills'>
+											<p>Wordpress</p>
+											<Image
+												className='skillsImage'
+												src={Wordpress}
+												alt='htmllogo'
+											/>
+										</div>
+										<div className='skills'>
+											<p>BigCommerce</p>
+											<Image
+												className='skillsImage'
+												src={BigCommerce}
+												alt='CSSlogo'
+											/>
+										</div>
+										<div className='skills'>
+											<p>Github</p>
+											<Image
+												className='skillsImage'
+												src={Github}
+												alt='javascriptLogo'
+											/>
+										</div>
+									</Row>
+								</Container>
+							</Col>
+						</Row>
+					</Container>
 
-					<Container
-						fluid
-						style={{
-							textAlign: 'center',
-							margin: '1em',
-							padding: '1em',
-							alignItems: 'center',
-							justifyContent: 'center',
-						}}>
+					<Container fluid>
 						<div>
 							<h1
 								style={{
@@ -254,6 +236,7 @@ class Home extends Component {
 									fontFamily: 'Montserrat',
 									textTransform: 'uppercase',
 									margin: '1em',
+									textAlign: 'center',
 								}}>
 								Projects
 							</h1>

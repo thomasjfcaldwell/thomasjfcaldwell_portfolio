@@ -3,6 +3,8 @@ import { Route, BrowserRouter as Router,  Link, } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import './App.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Contact from './Contact';
 import QuizGame from './Quizgame';
 import Knowyourwizard from './Knowyourwizard';
@@ -11,6 +13,8 @@ import FetchGoal from './FetchGoal';
 import Picnics from './Picnics'
 import Coffee from './Coffee'
 class App extends Component {
+
+	
 	render() {
 		return (
 			<div>

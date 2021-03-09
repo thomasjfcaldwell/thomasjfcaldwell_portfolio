@@ -68,14 +68,13 @@ class Home extends Component {
 						</div>
 					</Jumbotron>
 					<Container fluid>
-						<Row className='m-5'>
-							<Col
-								lg={6}
-								sm={12}
-								className='text-center'
-								style={{
-									backgroundColor: '#272727',
-								}}>
+						<Row
+							style={{
+								alignItems: 'center',
+								textAlign: 'center',
+								justifyContent: 'center',
+							}}>
+							<Col lg={6} sm={12}>
 								<div>
 									<h1
 										style={{
@@ -83,47 +82,41 @@ class Home extends Component {
 											fontSize: '2em',
 											fontFamily: 'Montserrat',
 											textTransform: 'uppercase',
+											textAlign: 'center',
+											margin: '1em',
 										}}>
 										About THOMAS
 									</h1>
 								</div>
-								<Card className='border-0 bg-transparent text-center '>
-									<Card.Body className=' bg-transparent'>
-										<Card.Text
-											style={{
-												fontSize: '0.9em',
-												lineHeight: '1.2em',
-												color: 'white',
-											}}>
-											Thomas is a web developer and designer currently residing
-											in Huntington Beach, CA. Originally from The United
-											Kingdom he lives with his wife and pets. When he's not
-											designing websites he like long walks on the beach and
-											surfing.
-										</Card.Text>
-										<Image
-											src={portrait}
-											style={{
-												width: '75%',
-												padding: '0.5em',
-											}}
-										/>
-										<Card.Text
-											style={{
-												fontSize: '0.9em',
-												lineHeight: '1.2em',
-												color: 'white',
-											}}>
-											Forward thinking and mature UI developer who can deal with
-											all tasks without fuss. Able to synthesize information and
-											achieve a solution to a problem and take the lead on that
-											task. A skilled designer with experience in front-end and
-											back end web applications. Looking to further skills and
-											bring expertise, leadership and creativity to the right
-											role
-										</Card.Text>
-									</Card.Body>
-								</Card>
+
+								<div
+									style={{
+										alignItems: 'center',
+										textAlign: 'center',
+										justifyContent: 'center',
+									}}>
+									<p className='aboutText'>
+										Thomas is a web developer and designer currently residing in
+										Huntington Beach, CA. Originally from The United Kingdom he
+										lives with his wife and pets. When he's not designing
+										websites he like long walks on the beach and surfing.
+									</p>
+									<Image
+										src={portrait}
+										style={{
+											width: '80%',
+											margin: '50px',
+										}}
+									/>
+									<p className='aboutText'>
+										Forward thinking and mature UI developer who can deal with
+										all tasks without fuss. Able to synthesize information and
+										achieve a solution to a problem and take the lead on that
+										task. A skilled designer with experience in front-end and
+										back end web applications. Looking to further skills and
+										bring expertise, leadership and creativity to the right role
+									</p>
+								</div>
 							</Col>
 							<Col
 								sm={12}
@@ -242,7 +235,12 @@ class Home extends Component {
 							</h1>
 						</div>
 
-						<Row>
+						<Row
+							style={{
+								alignItems: 'center',
+								textAlign: 'center',
+								justifyContent: 'center',
+							}}>
 							<Col lg={4} sm={6} className='projects'>
 								<p>Capital Cities Quiz Game</p>
 								<img

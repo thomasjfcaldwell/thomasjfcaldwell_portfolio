@@ -10,8 +10,7 @@ class Contact extends Component {
 				<Container
 					fluid
 					style={{
-						width: '90%',
-						padding: '50px',
+						width: '100%',
 					}}>
 					<Row>
 						<Col lg={6} sm={12}>
@@ -28,12 +27,7 @@ class Contact extends Component {
 
 							<Form
 								action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
-								method='POST'
-								style={{
-									display: 'flex',
-									flexDirection: 'column',
-									width: '100%',
-								}}>
+								method='POST'>
 								<div>
 									<input
 										name='entry.1673834915'
@@ -57,22 +51,15 @@ class Contact extends Component {
 										name='entry.1359360774'
 										className='feedback-input'
 										placeholder=' send a message here'
+										style={{
+											color: 'black',
+										}}
 									/>
 								</div>
 								<input type='submit' value='Submit'></input>
 							</Form>
 						</Col>
-						<Col
-							lg={6}
-							sm={12}
-							style={{
-								background: '#272727',
-								textAlign: 'center',
-								color: 'white',
-								alignItems: 'center',
-								justifyContent: 'center',
-								padding: '0.5em',
-							}}>
+						<Col lg={6} sm={12}>
 							<div>
 								<h1
 									style={{
@@ -80,6 +67,7 @@ class Contact extends Component {
 										fontSize: '2em',
 										fontFamily: 'Montserrat',
 										textTransform: 'uppercase',
+										textAlign: 'center',
 									}}>
 									MORE INformation
 								</h1>
@@ -94,8 +82,9 @@ class Contact extends Component {
 										marginTop: '50px',
 									}}>
 									<Col
+										lg={6}
+										sm={12}
 										style={{
-											width: '50%',
 											display: 'flex',
 											flexDirection: 'column',
 											alignItems: 'center',

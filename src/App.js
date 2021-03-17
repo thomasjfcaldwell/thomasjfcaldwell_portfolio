@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter as Router,  Link, } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import './App.scss';
@@ -10,14 +10,14 @@ import QuizGame from './Quizgame';
 import Knowyourwizard from './Knowyourwizard';
 import Fleet from './Fleet';
 import FetchGoal from './FetchGoal';
-import Picnics from './Picnics'
-import Coffee from './Coffee'
+import Picnics from './Picnics';
+import Coffee from './Coffee';
 class App extends Component {
-
-	
 	render() {
 		return (
-			<div>
+			<div style={{
+				backgroundColor:'#6623'
+			}}>
 				<nav>
 					<Link to='/contact'></Link>
 					<Link to='/'></Link>
@@ -27,14 +27,13 @@ class App extends Component {
 					<Link to='/fetchgoal'></Link>
 					<Link to='/picnics'></Link>
 					<Link to='/coffee'></Link>
+					<Header />
 				</nav>
 
-				<main>
-					<Header />
-
+				<main className='body'>
 					<Route exact path='/' component={Home} />
 
-					<Route exact path='/contact' component={Contact} />
+					<Route exact path='/contact'  />
 					<Route exact path='/quizgame' component={QuizGame} />
 					<Route exact path='/knowyourwizard' component={Knowyourwizard} />
 					<Route exact path='/fleet' component={Fleet} />
@@ -42,6 +41,9 @@ class App extends Component {
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
 				</main>
+				<footer>
+					<Contact />
+				</footer>
 			</div>
 		);
 	}

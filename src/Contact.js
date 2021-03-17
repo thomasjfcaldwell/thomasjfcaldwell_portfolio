@@ -15,16 +15,17 @@ class Contact extends Component {
 					}}>
 					<Row>
 						<Col lg={12}>
-							<h1
-								style={{
-									color: '#14A76C',
-									fontSize: '2em',
-									fontFamily: 'Montserrat',
-									textTransform: 'uppercase',
-									textAlign: 'center',
-								}}>
-								CONTACT THOMAS
-							</h1>
+							<div>
+								<h4
+									style={{
+										color: '#14A76C',
+										fontFamily: 'Montserrat',
+										textTransform: 'uppercase',
+										textAlign: 'center',
+									}}>
+									ConTact Thomas
+								</h4>
+							</div>
 
 							<Form
 								action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'

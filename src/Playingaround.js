@@ -86,7 +86,14 @@ const Playingaround = () => {
 							</p>
 						</div>
 					</Col>
-					<Col sm={12} lg={6}>
+					<Col
+						sm={12}
+						lg={6}
+						style={{
+							alignItems: 'center',
+							textAlign: 'center',
+							justifyContent: 'center',
+						}}>
 						<div>
 							<h4
 								style={{
@@ -100,7 +107,6 @@ const Playingaround = () => {
 						</div>
 						<Row
 							style={{
-								width: '100%',
 								alignItems: 'center',
 								textAlign: 'center',
 								justifyContent: 'center',
@@ -123,7 +129,6 @@ const Playingaround = () => {
 						</Row>
 						<Row
 							style={{
-								width: '100%',
 								alignItems: 'center',
 								textAlign: 'center',
 								justifyContent: 'center',
@@ -146,7 +151,6 @@ const Playingaround = () => {
 						</Row>
 						<Row
 							style={{
-								width: '100%',
 								alignItems: 'center',
 								textAlign: 'center',
 								justifyContent: 'center',
@@ -181,7 +185,6 @@ const Playingaround = () => {
 							<div>
 								<Row
 									style={{
-										width: '100%',
 										textAlign: 'center',
 										alignItems: 'center',
 										justifyContent: 'center',

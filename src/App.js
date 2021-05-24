@@ -45,6 +45,14 @@ class App extends Component {
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
 				</body>
+				<footer>
+					<div
+						style={{
+							marginTop: '9em',
+							height: '190px',
+							backgroundColor: '#727272',
+						}}></div>
+				</footer>
 			</div>
 		);
 	}

@@ -26,63 +26,51 @@ class Coffee extends Component {
 					}}>
 					<Row
 						style={{
-							alignItems: 'center',
+							// alignItems: 'center',
 							justifyContent: 'center',
 						}}>
-						<Card className='border-0' sm={12}>
-							<Card.Body>
-								<Image
-									src={coffee}
-									style={{
-										display: 'block',
-										margin: '0 auto',
-										maxWidth: '50%',
-									}}
-								/>
-							</Card.Body>
-						</Card>
-					</Row>
-					<Row>
-						
-						<Col className='text-left' lg={4}>
-							<Card.Title className='title'>Introduction to the App</Card.Title>
-							<Card.Text>
+						<Col sm={12} lg={6}>
+							<Image
+								src={coffee}
+								style={{
+									display: 'block',
+									margin: '0 auto',
+									maxWidth: '50%',
+								}}
+							/>
+						</Col>
+
+						<Col className='text-left' lg={6} sm={12}>
+							<h5 className='title'>Introduction to the App</h5>
+							<p>
 								This is a personal project. The idea is to set up a website for
 								dropshipping coffee.
-							</Card.Text>
-						</Col>
-						<Col lg={4}>
-							<Card.Title className='title'>
-								Requirements for the App
-							</Card.Title>
-							<Card.Text>
+							</p>
+
+							<h5 className='title'>Requirements for the App</h5>
+							<p>
 								To be able to sell coffee online and to ship product to
 								customers
-							</Card.Text>
-						</Col>
-						<Col lg={4}>
-							<Card.Title className='title'>
-								Technologies used to develop App
-							</Card.Title>
-							<Card.Text>
+							</p>
+
+							<h5 className='title'>Technologies used to develop App</h5>
+							<p>
 								The backend was built using Django and Python. The frontend I
 								used React , React Bootstrap and SASS.
-							</Card.Text>
+							</p>
+				<div>
+					<p
+						style={{
+							color: '#727272',
+							fontFamily: 'Montserrat',
+							textAlign: 'center',
+						}}>
+					React and React Bootstrap
+					</p>
+				</div>
 						</Col>
 					</Row>
 				</Container>
-				<div>
-					<h4
-						style={{
-							color: '#14A76C',
-							fontFamily: 'Montserrat',
-							textTransform: 'uppercase',
-							textAlign: 'center',
-							margin: '1em',
-						}}>
-						Backend - Django and Python Frontend - React and React Bootstrap
-					</h4>
-				</div>
 			</div>
 		);
 	}

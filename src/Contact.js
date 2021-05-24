@@ -9,10 +9,7 @@ class Contact extends Component {
 			<div>
 				<Container
 					fluid
-					style={{
-						width: '100%',
-						marginTop: '50px',
-					}}>
+					>
 					<Row>
 						<Col lg={12}>
 							<div>

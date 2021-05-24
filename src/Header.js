@@ -5,13 +5,9 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
 	render() {
 		return (
-			<Navbar
-				collapseOnSelect
-				expand='md'
-				bg='transparent'
-				style={{
-					minHeight: '5em',
-				}}>
+			<Navbar collapseOnSelect expand='md'  style={{
+				
+			}}>
 				<Navbar.Brand>
 					<Link
 						to={'/'}
@@ -22,7 +18,7 @@ class Header extends Component {
 							textTransform: 'uppercase',
 							color: 'black',
 						}}>
-						thomas caldwell portfolio
+						THOMAS CALDWELL
 					</Link>
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls='responsive-navbar-nav' />

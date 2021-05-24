@@ -4,7 +4,8 @@ import Typical from 'react-typical';
 
 import './App.scss';
 import Playingaround from './Playingaround';
-import Projects from './Projects'
+import Projects from './Projects';
+import Contact from './Contact';
 
 class Home extends Component {
 	render() {
@@ -58,6 +59,9 @@ class Home extends Component {
 							margin: '50px 0',
 						}}>
 						<Projects />
+					</div>
+					<div>
+						<Contact />
 					</div>
 				</div>
 			</>

@@ -15,9 +15,7 @@ import Coffee from './Coffee';
 class App extends Component {
 	render() {
 		return (
-			<div style={{
-				backgroundColor:'#6623'
-			}}>
+			<div>
 				<nav>
 					<Link to='/contact'></Link>
 					<Link to='/'></Link>
@@ -30,20 +28,23 @@ class App extends Component {
 					<Header />
 				</nav>
 
-				<main className='body'>
+				<body>
 					<Route exact path='/' component={Home} />
 
-					<Route exact path='/contact'  />
-					<Route exact path='/quizgame' component={QuizGame} />
+					<Route exact path='/contact' component={Contact} />
+					<Route
+						exact
+						path='/quizgame'
+						render={() => {
+							return <QuizGame />;
+						}}
+					/>
 					<Route exact path='/knowyourwizard' component={Knowyourwizard} />
 					<Route exact path='/fleet' component={Fleet} />
 					<Route exact path='/fetchgoal' component={FetchGoal} />
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
-				</main>
-				<footer>
-					<Contact />
-				</footer>
+				</body>
 			</div>
 		);
 	}

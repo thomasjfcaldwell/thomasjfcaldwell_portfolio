@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Container, Image } from 'react-bootstrap';
-import ReactPlayer from 'react-player';
 import carousel3 from './images/fleetcara.png';
 
 class Fleet extends Component {
@@ -11,7 +10,7 @@ class Fleet extends Component {
 					<div>
 						<h1
 							style={{
-								color: '#14A76C',
+								color: '#727272',
 								fontSize: '2em',
 								fontFamily: 'Montserrat',
 								textTransform: 'uppercase',
@@ -32,7 +31,8 @@ class Fleet extends Component {
 							}}>
 							<Card className='border-0' sm={12}>
 								<Card.Body>
-									<Image fluid
+									<Image
+										fluid
 										src={carousel3}
 										style={{
 											display: 'block',

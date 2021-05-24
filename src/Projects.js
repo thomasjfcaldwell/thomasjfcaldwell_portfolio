@@ -18,7 +18,7 @@ const Projects = () => {
 				<div>
 					<h4
 						style={{
-							color: '#14A76C',
+							color: '#727272',
 							fontFamily: 'Montserrat',
 							textTransform: 'uppercase',
 							textAlign: 'center',
@@ -130,7 +130,7 @@ const Projects = () => {
 						/>
 
 						<p className='projectsText'>
-							A group app developed with 3 other developers.
+							A Group Developed App
 						</p>
 						<div className='links'>
 							<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
@@ -216,7 +216,7 @@ const Projects = () => {
 						/>
 
 						<p className='projectsText'>
-							A site for members of the public to book picnics
+							An Event booking site.
 						</p>
 						<div className='links'>
 							<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
@@ -260,7 +260,7 @@ const Projects = () => {
 						/>
 
 						<p className='projectsText'>
-							A sideline project made through the love of coffee.
+							A project made through the love of coffee.
 						</p>
 						<div className='links'>
 							<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>

@@ -30,7 +30,7 @@ const Playingaround = () => {
 						<div>
 							<h4
 								style={{
-									color: '#14A76C',
+									color: '#727272',
 									fontFamily: 'Montserrat',
 									textTransform: 'uppercase',
 									textAlign: 'center',
@@ -97,7 +97,7 @@ const Playingaround = () => {
 						<div>
 							<h4
 								style={{
-									color: '#14A76C',
+									color: '#727272',
 									textAlign: 'center',
 									fontFamily: 'Montserrat',
 									textTransform: 'uppercase',
@@ -209,7 +209,7 @@ const Playingaround = () => {
 										<a
 											href='https://drive.google.com/file/d/1vwa_ukC3V472FisHWRCGSvCnz8X6PrFt/view?usp=sharing'
 											style={{
-												color: '#14A76C',
+												color: '#727272',
 											}}>
 											See Resume Here
 										</a>

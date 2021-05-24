@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import './App.scss';
 import '../src/KnowYourWizard.scss';
 
@@ -47,7 +47,7 @@ class FetchGoal extends Component {
 								originally a paired developed app with another developer from my
 								bootcamp. We split into frontend and backend with myself in
 								charge of the frontend. I have since completed the backend
-								myself to add experince and knowledge to my backend portfolio.
+								myself to add experience and knowledge to my backend portfolio.
 							</p>
 
 							<h5 className='title'>Requirements for the App</h5>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 import './App.scss';
 
 import picnics from './images/popuppicnics.jpg';

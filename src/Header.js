@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
 	render() {
 		return (
-			<Navbar collapseOnSelect expand='md'  style={{
-				
-			}}>
+			<Navbar collapseOnSelect expand='md' style={{}}>
 				<Navbar.Brand>
 					<Link
 						to={'/'}
@@ -32,32 +30,34 @@ class Header extends Component {
 							textTransform: 'uppercase',
 							color: 'black',
 						}}>
-						<Nav.Link>
-							<Link
-								bg='transparent'
-								to={'/'}
-								style={{
-									color: 'black',
-								}}>
-								Home
-							</Link>
-						</Nav.Link>
-						<Nav.Link>
-							<Link
-								to={'/contact'}
-								style={{
-									color: 'black',
-								}}>
-								Contact
-							</Link>
-						</Nav.Link>
+						<Link
+							bg='transparent'
+							to={'/'}
+							style={{
+								color: 'black',
+								marginTop: '10px',
+								padding: '5px',
+							}}>
+							Home
+						</Link>
+
+						<Link
+							to={'/contact'}
+							style={{
+								color: 'black',
+								marginTop: '10px',
+								padding: '5px',
+							}}>
+							Contact
+						</Link>
+
 						<NavDropdown
 							title='Projects'
 							id='collapsible-nav-dropdown'
 							style={{
 								color: 'black',
 								fontSize: '0.8em',
-								marginTop: '4px',
+								marginTop: '10px',
 								backgroundColor: 'transparent',
 								border: 'none',
 							}}>

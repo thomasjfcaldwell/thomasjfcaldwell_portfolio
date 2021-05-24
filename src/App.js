@@ -3,7 +3,6 @@ import { Route, BrowserRouter as Router, Link } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import './App.scss';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Contact from './Contact';
 import QuizGame from './Quizgame';
@@ -28,7 +27,7 @@ class App extends Component {
 					<Header />
 				</nav>
 
-				<body>
+				<main>
 					<Route exact path='/' component={Home} />
 
 					<Route exact path='/contact' component={Contact} />
@@ -44,7 +43,7 @@ class App extends Component {
 					<Route exact path='/fetchgoal' component={FetchGoal} />
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
-				</body>
+				</main>
 				<footer>
 					<div
 						style={{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container, Image } from 'react-bootstrap';
 import coffee from './images/needcoffee.jpg'
 import './App.scss';
 

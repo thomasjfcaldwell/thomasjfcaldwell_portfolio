@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Form, Col, Row } from 'react-bootstrap';
-import resume from './images/thomasCaldwellResume.jpg';
 import './App.scss';
 
 class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<Container
-					fluid
-					>
+				<Container fluid>
 					<Row>
 						<Col lg={12}>
 							<div>
@@ -20,7 +17,7 @@ class Contact extends Component {
 										textTransform: 'uppercase',
 										textAlign: 'center',
 									}}>
-									ConTact Thomas
+									Contact Thomas
 								</h4>
 							</div>
 

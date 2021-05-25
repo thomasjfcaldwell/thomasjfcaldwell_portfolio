@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './App.scss';
 
-import picnics from './images/popuppicnics.jpg';
+import picnics from './images/picnicMockup2.jpg';
+import picnics1 from './images/picnicMockup1.jpg';
 
 class Picnics extends Component {
 	render() {
@@ -24,15 +25,26 @@ class Picnics extends Component {
 					fluid
 					style={{
 						fontFamily: 'Montserrat',
+						margin:'3em 0'
 					}}>
 					<Row
 						style={{
 							alignItems: 'center',
 							justifyContent: 'center',
 						}}>
-						<Col sm={12} lg={6}>
+						<Col sm={12} lg={3}>
 							<Image
 								src={picnics}
+								style={{
+									display: 'block',
+									margin: '0 auto',
+									maxWidth: '75%',
+								}}
+							/>
+						</Col>
+						<Col sm={12} lg={3}>
+							<Image
+								src={picnics1}
 								style={{
 									display: 'block',
 									margin: '0 auto',
@@ -51,18 +63,14 @@ class Picnics extends Component {
 								photography.
 							</p>
 
-							<h5 className='title'>
-								Requirements for the App
-							</h5>
+							<h5 className='title'>Requirements for the App</h5>
 							<p>
 								The business owner wanted it to look simple but professional.
 								Also they wanted potential customers to be able view prices and
 								send a request to book an event.
 							</p>
 
-							<h5 className='title'>
-								Technologies used to develop App
-							</h5>
+							<h5 className='title'>Technologies used to develop App</h5>
 							<p>
 								I used React for the whole site. For the booking and contact
 								forms I used customized google forms. The site is styled with

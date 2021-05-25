@@ -114,15 +114,15 @@ const Playingaround = () => {
 							}}
 							lg={12}
 							sm={12}>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>HTML</p>
 								<Image className='skillsImage' src={HTML} />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>CSS</p>
 								<Image src={CSS} className='skillsImage' />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>JavaScript</p>
 								<Image src={JAVASCRIPT} className='skillsImage' />
 							</Col>
@@ -136,15 +136,15 @@ const Playingaround = () => {
 							}}
 							lg={12}
 							sm={12}>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>React</p>
 								<Image className='skillsImage' src={Reactlogo} />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>Bootstrap</p>
 								<Image src={Bootstrap} className='skillsImage' />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>Adobe Creative Suite</p>
 								<Image src={Adobe} className='skillsImage' />
 							</Col>
@@ -158,15 +158,15 @@ const Playingaround = () => {
 								marginBottom: '20px',
 							}}
 							lg={12}>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>Wordpress</p>
 								<Image className='skillsImage' src={Wordpress} />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>Big Commerce</p>
 								<Image src={BigCommerce} className='skillsImage' />
 							</Col>
-							<Col lg={4}>
+							<Col lg={4} xs={4}>
 								<p>Github</p>
 								<Image src={Github} className='skillsImage' />
 							</Col>
@@ -207,11 +207,12 @@ const Playingaround = () => {
 											}}
 										/>
 										<a
-											href='https://drive.google.com/file/d/1vwa_ukC3V472FisHWRCGSvCnz8X6PrFt/view?usp=sharing'
+											href='https://drive.google.com/file/d/1JIIeJoTGE0gR0P7yAG-NX5L98Erxj6QP/view?usp=sharing'
 											style={{
-												color: '#727272',
+												color: 'black',
+												fontWeight: '700',
 											}}>
-											See Resume Here
+											View and Download Resume Here
 										</a>
 									</Col>
 									<Col

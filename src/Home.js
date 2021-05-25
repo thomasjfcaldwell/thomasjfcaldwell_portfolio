@@ -30,6 +30,7 @@ class Home extends Component {
 							}}>
 							Welcome To Thomas' Portfolio
 						</h5>
+
 						<p>
 							Thomas is{' '}
 							<Typical

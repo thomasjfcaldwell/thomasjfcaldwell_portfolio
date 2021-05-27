@@ -11,6 +11,9 @@ import Fleet from './Fleet';
 import FetchGoal from './FetchGoal';
 import Picnics from './Picnics';
 import Coffee from './Coffee';
+import { FaGithubSquare,} from 'react-icons/fa';
+import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
+
 class App extends Component {
 	render() {
 		return (
@@ -50,7 +53,45 @@ class App extends Component {
 							marginTop: '9em',
 							height: '190px',
 							backgroundColor: '#727272',
-						}}></div>
+							display: 'flex',
+							flexDirection: 'row',
+							justifyContent: 'center',
+							alignItems: 'center',
+						}}>
+						<div>
+							<a href='https://www.facebook.com/thomas.caldwell.1612'>
+								<AiFillFacebook
+									size={40}
+									style={{
+										margin: '50px',
+										color: 'white',
+									}}
+								/>
+							</a>
+						</div>
+						<div>
+							<a href='https://www.linkedin.com/in/thomas-caldwell-huntingtonbeach/'>
+								<AiFillLinkedin
+									size={40}
+									style={{
+										margin: '50px',
+										color: 'white',
+									}}
+								/>
+							</a>
+						</div>
+						<div>
+							<a href='https://github.com/thomasjfcaldwell?tab=repositories'>
+								<FaGithubSquare
+									size={40}
+									style={{
+										margin: '50px',
+										color: 'white',
+									}}
+								/>
+							</a>
+						</div>
+					</div>
 				</footer>
 			</div>
 		);

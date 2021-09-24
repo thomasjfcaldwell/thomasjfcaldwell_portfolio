@@ -14,7 +14,7 @@ import { IoMdInformationCircleOutline } from 'react-icons/io';
 const Projects = () => {
 	return (
 		<div>
-			<Container fluid>
+			<Container>
 				<div>
 					<h4
 						style={{

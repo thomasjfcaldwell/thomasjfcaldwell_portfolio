@@ -27,10 +27,10 @@ class App extends Component {
 					<Link to='/fetchgoal'></Link>
 					<Link to='/picnics'></Link>
 					<Link to='/coffee'></Link>
-					<Header />
+					{/* <Header /> */}
 				</nav>
 
-				<main>
+				<main> 
 					<Route exact path='/' component={Home} />
 
 					<Route exact path='/contact' component={Contact} />
@@ -46,8 +46,8 @@ class App extends Component {
 					<Route exact path='/fetchgoal' component={FetchGoal} />
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
-				</main>
-				<footer>
+				</main> 
+				{/* <footer>
 					<div
 						style={{
 							marginTop: '9em',
@@ -92,7 +92,7 @@ class App extends Component {
 							</a>
 						</div>
 					</div>
-				</footer>
+				</footer> */}
 			</div>
 		);
 	}

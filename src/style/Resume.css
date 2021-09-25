@@ -1,0 +1,49 @@
+.content-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.resume-image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.resume-image {
+	width: 50%;
+	margin: 1em 0em;
+}
+
+.project-opinion-row {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.project-opinion-col {
+	display: flex;
+	justify-content: center;
+}
+
+.project-opinion-image {
+	width: 45%;
+	margin: 1em;
+}
+
+.contact-row {
+	display: flex;
+	flex-direction: column;
+}
+.contact-col {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+.contact-col p {
+	font-weight: 700;
+}
+.contact-col a {
+	color: #727272;
+}

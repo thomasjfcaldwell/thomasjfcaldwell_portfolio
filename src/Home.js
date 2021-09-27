@@ -10,7 +10,9 @@ import Contact from './Contact';
 import Resume from './Resume';
 import './style/home.css';
 
-import thomasCaldwellImage from './images/thomasportfolioimage.jpg'
+import thomasCaldwellImage from './images/thomasportfolioimage.jpg';
+import Graphics from './Graphics';
+import OnlineGraphics from './OnlineGraphics';
 
 class Home extends Component {
 	render() {
@@ -20,7 +22,9 @@ class Home extends Component {
 					<Container fluid className='header-container'>
 						<Row className='header-row'>
 							<Col sm={12} md={6} lg={6} className='header-col'>
-								<h5 className='header'>Get To Know Thomas Better</h5>
+								<div className='headline-container'>
+									<h1 className='headline'>Get To Know Thomas Better</h1>
+								</div>
 								<p className='aboutText'>
 									Thomas is a web developer and designer currently residing in
 									Huntington Beach, CA. Originally from The United Kingdom he
@@ -28,7 +32,7 @@ class Home extends Component {
 									he like long walks on the beach and surfing.
 								</p>
 								<p className='aboutText'>
-									Below is listed all of the software, programming langugages
+									Below is listed all of the software, programming language's
 									and technologies Thomas has experience in.
 								</p>
 							</Col>
@@ -43,22 +47,25 @@ class Home extends Component {
 							</Col>
 						</Row>
 					</Container>
-					<div>
-						<Playaround />
-					</div>
-					<div>
-						<Resume />
-					</div>
-					<div
-						style={{
-							margin: '50px 0',
-						}}>
-						<Projects />
-					</div>
+					<Playaround />
+					<Projects />
+					<Container fluid className='more-projects-container'>
+						<div className='headline-container'>
+							<h1 className='headline'>Examples of Graphic Skills</h1>
+						</div>
+						<Row className='more-projects-row'>
+							<Col lg={6} sm={12}>
+								<Graphics />
+							</Col>
+							<Col lg={6} sm={12}>
+								<OnlineGraphics />
+							</Col>
+						</Row>
+					</Container>
+					<Resume />
 					<div>
 						<Contact />
-					</div>{' '}
-					*/}
+					</div>
 				</div>
 			</>
 		);

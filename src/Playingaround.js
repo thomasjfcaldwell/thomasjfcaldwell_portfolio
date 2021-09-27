@@ -17,6 +17,7 @@ import BigCommerce from './icons/BigCommerce.png';
 import Github from './icons/github.png';
 
 import './style/Playingaround.css';
+import './style/home.css';
 
 const Playingaround = () => {
 	useEffect(() => {
@@ -24,71 +25,65 @@ const Playingaround = () => {
 	}, []);
 	return (
 		<div data-aos='flip-left'>
-			<div>
-				<h4
-					style={{
-						color: '#727272',
-						textAlign: 'center',
-						fontFamily: 'Montserrat',
-						textTransform: 'uppercase',
-					}}>
-					SKILLS & Resume
-				</h4>
-			</div>
-			<Container fluid>
+			<Container fluid className='skills-container'>
+				<div className='headline-container'>
+					<h1 className='headline'>SKILLS</h1>
+				</div>
 				<Row className='skills-row'>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} sm={6} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>HTML</p>
 							<Image className='skillsImage' src={HTML} />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>CSS</p>
 							<Image src={CSS} className='skillsImage' />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>JavaScript</p>
 
 							<Image src={JAVASCRIPT} className='skillsImage' />
 						</div>
 					</Col>
-
-					<Col lg={1} md={4} className='skills-col'>
+				</Row>
+				<Row className='skills-row'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>React</p>
 							<Image className='skillsImage' src={Reactlogo} />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>Bootstrap</p>
 							<Image src={Bootstrap} className='skillsImage' />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>Adobe Creative Suite</p>
 							<Image src={Adobe} className='skillsImage' />
 						</div>
 					</Col>
-
-					<Col lg={1} md={4} className='skills-col'>
+				</Row>
+				<Row className='skills-row'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>Wordpress</p>
 							<Image className='skillsImage' src={Wordpress} />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>Big Commerce</p>
 							<Image src={BigCommerce} className='skillsImage' />
 						</div>
 					</Col>
-					<Col lg={1} md={4} className='skills-col'>
+					<Col lg={2} md={4} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>Github</p>
 							<Image src={Github} className='skillsImage' />
@@ -96,7 +91,6 @@ const Playingaround = () => {
 					</Col>
 				</Row>
 			</Container>
-			
 		</div>
 	);
 };

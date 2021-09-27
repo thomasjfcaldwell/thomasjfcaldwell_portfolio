@@ -1,3 +1,7 @@
+.content-container{
+	background-color: #2ab7ca;
+}
+
 .content-row {
 	display: flex;
 	flex-direction: row;

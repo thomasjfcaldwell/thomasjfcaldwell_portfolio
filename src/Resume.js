@@ -1,6 +1,6 @@
 import React, { useEffect, Component } from 'react';
 import resume from './images/thomasCaldwellResume.jpg';
-import placeholder from './images/350x150.png'
+import placeholder from './images/350x150.png';
 
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './style/Resume.css';
@@ -76,7 +76,6 @@ class Resume extends Component {
 						</Col>
 					</Row>
 				</Container>
-				;
 			</>
 		);
 	}

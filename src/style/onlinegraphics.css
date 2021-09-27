@@ -1,0 +1,16 @@
+.online-graphics-container {
+	margin-top: 3em;
+}
+.online-graphics-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.online-graphics-image {
+	width: 100%;
+}
+
+.online-graphics-images-image {
+	width: 100%;
+}

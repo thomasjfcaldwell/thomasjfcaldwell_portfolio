@@ -1,0 +1,49 @@
+.projects-container {
+	background-color: #fe4a49;
+	padding: 10em;
+}
+
+.projects-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+}
+.projects-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.9em 0em;
+	padding: 0.5em;
+}
+.project-title-container {
+	display: flex;
+	justify-content: center;
+}
+.project-title {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	color: #727272;
+	letter-spacing: 0.2em;
+}
+.project-image-container {
+	display: flex;
+	justify-content: center;
+}
+.project-image {
+	width: 75%;
+}
+.links-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.links-col {
+	display: flex;
+	color: #727272;
+}
+.links-col-text {
+	font-size: 0.9em;
+	color: #727272;
+	padding: 0.5em;
+}

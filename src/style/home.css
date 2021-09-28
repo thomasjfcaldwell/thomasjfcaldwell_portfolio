@@ -2,14 +2,13 @@
 
 .body {
 	font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
 	font-size: 12px;
-	width: 100%;
+	color: #4a4e4d;
 }
 
 .header-container {
 	width: 100%;
-	background-color: #fed766;
+	background-color: #f6cd61;
 }
 
 .header-row {
@@ -42,20 +41,9 @@
 
 .aboutText {
 	width: 50%;
-	color: #727272;
-	margin: 1em 0em;
 	text-align: center;
-}
-
-.more-projects-container {
-	background-color: #fed766;
-	padding: 10em;
-}
-
-.more-projects-row {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	font-size: 1.1em;
+	margin-top: 2em;
 }
 
 .headline-container {

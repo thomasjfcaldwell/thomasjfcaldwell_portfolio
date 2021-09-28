@@ -47,7 +47,7 @@ class App extends Component {
 					<Route exact path='/picnics' component={Picnics} />
 					<Route exact path='/coffee' component={Coffee} />
 				</main> 
-				<footer>
+				{/* <footer>
 					<div
 						style={{
 							marginTop: '9em',
@@ -92,7 +92,7 @@ class App extends Component {
 							</a>
 						</div>
 					</div>
-				</footer> 
+				</footer>  */}
 			</div>
 		);
 	}

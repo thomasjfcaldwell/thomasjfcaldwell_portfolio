@@ -39,19 +39,22 @@ const Projects = () => {
 							<Row className='links-row'>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/quizgame'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>
@@ -80,19 +83,22 @@ const Projects = () => {
 							<Row className='links-row'>
 								<Col className='links-col'>
 									<a href='https://github.com/thomasjfcaldwell/know-your-wizard'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='https://knowyourwizard.herokuapp.com/wizards'>
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/knowyourwizard'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>
@@ -116,19 +122,22 @@ const Projects = () => {
 							<Row className='links-row'>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='https://warm-brook-93750.herokuapp.com'>
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/fleet'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>
@@ -156,19 +165,22 @@ const Projects = () => {
 							<Row className='links-row'>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='https://warm-brook-93750.herokuapp.com'>
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/fetchgoal'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>
@@ -193,20 +205,23 @@ const Projects = () => {
 							<Row>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='http://www.pop-uppicnics.com/'>
 										{' '}
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/picnics'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>
@@ -234,19 +249,22 @@ const Projects = () => {
 							<Row>
 								<Col className='links-col'>
 									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
-										<FaGithubSquare size={15} />
+										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='https://warm-brook-93750.herokuapp.com'>
-										<FaRegCheckCircle size={15} />
+										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
 								</Col>
 								<Col className='links-col'>
 									<a href='/picnics'>
-										<IoMdInformationCircleOutline size={15} />
+										<IoMdInformationCircleOutline
+											className='link-icon'
+											size={15}
+										/>
 										<span className='links-col-text'>More Info</span>
 									</a>
 								</Col>

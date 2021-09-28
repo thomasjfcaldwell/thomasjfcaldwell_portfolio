@@ -1,5 +1,7 @@
 .content-container{
-	background-color: #2ab7ca;
+	background-color:#e6e6ea;
+	height:100vh;
+	display: flex;
 }
 
 .content-row {
@@ -7,6 +9,7 @@
 	flex-direction: row;
 	justify-content: space-around;
     align-items: center;
+	padding:2em;
 }
 
 .resume-image-container {
@@ -49,5 +52,5 @@
 	font-weight: 700;
 }
 .contact-col a {
-	color: #727272;
+	color:#4a4e4d;
 }

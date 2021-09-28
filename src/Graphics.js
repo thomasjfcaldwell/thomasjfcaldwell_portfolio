@@ -12,28 +12,41 @@ class Graphics extends Component {
 				<Container fluid className='graphics-container'>
 					<Row className='graphics-row'>
 						<Col className='graphics-col'>
-							<p>
-								Along with Web Design and Development Thomas is also skilled
-								print design. Below are few examples of previous print designs
-							</p>
-						</Col>
-						<Col className='graphics-col'>
 							<Row className='print-graphics-row'>
-								<Col  className='print-graphics-col'>
-									<Image className='print-graphics-image' src={printGraphic1} />
-								</Col>
-								<Col  className='print-graphics-col'>
-									<Image className='print-graphics-image' src={printGraphic2} />
+								<Col className='print-graphics-col'>
+									<Row className='print-graphics-col-row'>
+										
+										<Image
+											className='print-graphics-image'
+											src={printGraphic1}
+										/>
+										
+										<h5 className='print-graphics-text'>Brochures</h5>
+									</Row>
 								</Col>
 								<Col className='print-graphics-col'>
-									<Image className='print-graphics-image' src={printGraphic3} />
+									<Row className='print-graphics-col-row'>
+										
+											<Image
+												className='print-graphics-image'
+												src={printGraphic2}
+											/>
+										
+
+										<h5 className='print-graphics-text'>Menu's</h5>
+									</Row>
+								</Col>
+								<Col className='print-graphics-col'>
+									<Row className='print-graphics-col-row'>
+										<Image
+											className='print-graphics-image'
+											src={printGraphic3}
+										/>
+
+										<h5 className='print-graphics-text'>Flyers</h5>
+									</Row>
 								</Col>
 							</Row>
-						</Col>
-						<Col className='graphics-col'>
-							<p>
-								Thomas uses Photoshop, Illustrator and Indesign to produce print content. Having years of experience all files will be sent to the printer PRINT Ready 
-							</p>
 						</Col>
 					</Row>
 				</Container>

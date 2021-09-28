@@ -11,8 +11,7 @@ import Resume from './Resume';
 import './style/home.css';
 
 import thomasCaldwellImage from './images/thomasportfolioimage.jpg';
-import Graphics from './Graphics';
-import OnlineGraphics from './OnlineGraphics';
+import GraphicSkills from './GraphicSkills';
 
 class Home extends Component {
 	render() {
@@ -48,20 +47,8 @@ class Home extends Component {
 						</Row>
 					</Container>
 					<Playaround />
+					<GraphicSkills />
 					<Projects />
-					<Container fluid className='more-projects-container'>
-						<div className='headline-container'>
-							<h1 className='headline'>Examples of Graphic Skills</h1>
-						</div>
-						<Row className='more-projects-row'>
-							<Col lg={6} sm={12}>
-								<Graphics />
-							</Col>
-							<Col lg={6} sm={12}>
-								<OnlineGraphics />
-							</Col>
-						</Row>
-					</Container>
 					<Resume />
 					<div>
 						<Contact />

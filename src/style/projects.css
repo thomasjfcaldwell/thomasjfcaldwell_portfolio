@@ -1,13 +1,14 @@
 .projects-container {
-	background-color: #fe4a49;
+	background-color: #fe8a71;
 	padding: 10em;
+	
 }
 
 .projects-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	
+	margin: 5em 0em;
 }
 .projects-col {
 	display: flex;
@@ -23,7 +24,7 @@
 .project-title {
 	font-size: 1.3em;
 	text-transform: uppercase;
-	color: #727272;
+	font-weight: 600;
 	letter-spacing: 0.2em;
 }
 .project-image-container {
@@ -40,10 +41,13 @@
 }
 .links-col {
 	display: flex;
-	color: #727272;
+	align-items: center;
+	justify-content: center;
 }
 .links-col-text {
 	font-size: 0.9em;
-	color: #727272;
 	padding: 0.5em;
+}
+.link-icon {
+	color: #4a4e4d;
 }

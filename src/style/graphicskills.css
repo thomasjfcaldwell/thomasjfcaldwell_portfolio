@@ -1,0 +1,30 @@
+.more-projects-container {
+	background-color: #f6cd61;
+	padding: 10em;
+}
+
+.more-projects-row {
+	display: flex;
+	padding: 2em;
+}
+
+.graphic-skills-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.graphic-skills-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.graphic-skills-col-image-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.graphic-skills-image {
+	width: 50%;
+}

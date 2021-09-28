@@ -30,7 +30,7 @@ const Playingaround = () => {
 					<h1 className='headline'>SKILLS</h1>
 				</div>
 				<Row className='skills-row'>
-					<Col lg={2} md={4} sm={6} className='skills-col'>
+					<Col lg={2} md={4} sm={12} className='skills-col'>
 						<div className='skills-info-container'>
 							<p>HTML</p>
 							<Image className='skillsImage' src={HTML} />

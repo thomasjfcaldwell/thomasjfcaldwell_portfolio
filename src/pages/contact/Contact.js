@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Form, Col, Row } from 'react-bootstrap';
-import './style/home.css';
+import "../../style/home.css"
 
 class Contact extends Component {
 	render() {

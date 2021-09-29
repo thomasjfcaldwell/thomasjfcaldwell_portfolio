@@ -6,7 +6,7 @@ import './App.scss';
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import Playaround from './Playingaround';
 import Projects from './Projects';
-import Contact from './Contact';
+import Contact from './pages/contact/Contact';
 import Resume from './Resume';
 import './style/home.css';
 

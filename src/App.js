@@ -4,7 +4,7 @@ import Header from './Header';
 import Home from './Home';
 import './App.scss';
 import 'aos/dist/aos.css';
-import Contact from './Contact';
+import Contact from './pages/contact/Contact';
 import QuizGame from './Quizgame';
 import { FaGithubSquare } from 'react-icons/fa';
 import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';

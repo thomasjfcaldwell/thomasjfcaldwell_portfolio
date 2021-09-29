@@ -1,132 +1,34 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './style/nav.css';
 class Header extends Component {
 	render() {
 		return (
-			<div></div>
-			// <Navbar collapseOnSelect expand='md'>
-			// 	<Navbar.Brand>
-			// 		<Link
-			// 			to={'/'}
-			// 			expand='md'
-			// 			style={{
-			// 				fontFamily: 'Montserrat',
-			// 				fontSize: '1em',
-			// 				textTransform: 'uppercase',
-			// 				color: 'black',
-			// 			}}>
-			// 			THOMAS CALDWELL
-			// 		</Link>
-			// 	</Navbar.Brand>
-			// 	<Navbar.Toggle aria-controls='responsive-navbar-nav' />
-			// 	<Navbar.Collapse id='responsive-navbar-nav' bg='transparent'>
-			// 		<Nav
-			// 			className='mr-auto mx-auto'
-			// 			bg='transparent'
-			// 			style={{
-			// 				fontFamily: 'Montserrat',
-			// 				fontSize: '1.5em',
-			// 				textTransform: 'uppercase',
-			// 				color: 'black',
-			// 			}}>
-			// 			<Link
-			// 				bg='transparent'
-			// 				to={'/'}
-			// 				style={{
-			// 					color: 'black',
-			// 					marginTop: '10px',
-			// 					padding: '5px',
-			// 				}}>
-			// 				Home
-			// 			</Link>
+			<div>
+				<Navbar className='navbar-container' collapseOnSelect expand='md'>
+					<Navbar.Brand>
+						<Link className='nav-link-text' to={'/'} expand='md'>
+							THOMAS CALDWELL PORTFOLIO
+						</Link>
+					</Navbar.Brand>
+					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
+					<Navbar.Collapse id='responsive-navbar-nav' bg='transparent'>
+						<Nav className='ml-auto mx-auto' bg='transparent'>
+							<Link bg='transparent' className='nav-link-text' to={'/'}>
+								Home
+							</Link>
 
-			// 			<Link
-			// 				to={'/contact'}
-			// 				style={{
-			// 					color: 'black',
-			// 					marginTop: '10px',
-			// 					padding: '5px',
-			// 				}}>
-			// 				Contact
-			// 			</Link>
-
-			// 			<NavDropdown
-			// 				title='Projects'
-			// 				id='collapsible-nav-dropdown'
-			// 				style={{
-			// 					color: 'black',
-			// 					fontSize: '0.8em',
-			// 					marginTop: '10px',
-			// 					backgroundColor: 'transparent',
-			// 					border: 'none',
-			// 				}}>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/quizgame'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 							// backgroundColor:'blue'
-			// 						}}>
-			// 						Quiz Game
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/knowyourwizard'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 						}}>
-			// 						Know Your Wizard
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/fleet'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 						}}>
-			// 						Fleet
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/fetchgoal'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 						}}>
-			// 						FetchGoal
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/picnics'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 						}}>
-			// 						Pop Up Picnics
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 				<NavDropdown.Item>
-			// 					<Link
-			// 						to={'/coffee'}
-			// 						style={{
-			// 							color: 'black',
-			// 							fontSize: '0.8em',
-			// 						}}>
-			// 						Need Coffee??
-			// 					</Link>
-			// 				</NavDropdown.Item>
-			// 			</NavDropdown>
-			// 		</Nav>
-			// 	</Navbar.Collapse>
-			// </Navbar>
+							<Link to={'/contact'} className='nav-link-text'>
+								Contact
+							</Link>
+							<Link to={'/quizgame'} className='nav-link-text'>
+								Projects
+							</Link>
+						</Nav>
+					</Navbar.Collapse>
+				</Navbar>
+			</div>
 		);
 	}
 }

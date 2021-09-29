@@ -1,7 +1,6 @@
 .content-container{
-	background-color:#e6e6ea;
-	height:100vh;
-	display: flex;
+	background-color: #e6e6ea;
+	padding: 10em;
 }
 
 .content-row {

@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
 import { Container, Form, Col, Row } from 'react-bootstrap';
-
+import './style/home.css';
 
 class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<Container fluid>
+				<Container fluid className='content-container'>
+					<div className='headline-container'>
+						<h1 className='headline'>Contact Thomas Here</h1>
+					</div>
 					<Row>
 						<Col lg={12}>
-							<div>
-								<h4
-									style={{
-										color: '#14A76C',
-										fontFamily: 'Montserrat',
-										textTransform: 'uppercase',
-										textAlign: 'center',
-									}}>
-									Contact Thomas
-								</h4>
-							</div>
-
 							<Form
 								action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
 								method='POST'>

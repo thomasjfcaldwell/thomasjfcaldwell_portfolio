@@ -4,12 +4,16 @@ import placeholder from './images/350x150.png';
 
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './style/Resume.css';
+import './style/home.css'
 
 class Resume extends Component {
 	render() {
 		return (
 			<>
 				<Container fluid className='content-container'>
+					<div className='headline-container'>
+						<h1 className='headline'>SKILLS</h1>
+					</div>
 					<Row className='content-row'>
 						<Col lg={4} sm={12} className='content-col'>
 							<div className='resume-image-container'>

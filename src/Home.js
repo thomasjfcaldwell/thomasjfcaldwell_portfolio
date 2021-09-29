@@ -50,9 +50,8 @@ class Home extends Component {
 					<GraphicSkills />
 					<Projects />
 					<Resume />
-					<div>
-						<Contact />
-					</div>
+
+					<Contact />
 				</div>
 			</>
 		);

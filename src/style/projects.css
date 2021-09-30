@@ -1,7 +1,6 @@
 .projects-container {
 	background-color: #fe8a71;
 	padding: 10em;
-	
 }
 
 .projects-row {
@@ -45,8 +44,9 @@
 	justify-content: center;
 }
 .links-col-text {
-	font-size: 0.9em;
-	padding: 0.5em;
+	font-size: 0.8em;
+	padding: 0.2em;
+	color: #4a4e4d;
 }
 .link-icon {
 	color: #4a4e4d;

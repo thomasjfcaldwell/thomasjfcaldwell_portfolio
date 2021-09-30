@@ -22,7 +22,7 @@ class Home extends Component {
 						<Row className='header-row'>
 							<Col sm={12} md={6} lg={6} className='header-col'>
 								<div className='headline-container'>
-									<h1 className='headline'>Get To Know Thomas Better</h1>
+									<h2 className='headline'>Get To Know Thomas Better</h2>
 								</div>
 								<p className='aboutText'>
 									Thomas is a web developer and designer currently residing in

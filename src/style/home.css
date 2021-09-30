@@ -9,6 +9,7 @@
 .header-container {
 	width: 100%;
 	background-color: #f6cd61;
+	height: 100vh;
 }
 
 .header-row {
@@ -25,7 +26,7 @@
 }
 
 .header {
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	text-transform: uppercase;
 }
 
@@ -57,5 +58,5 @@
 	color: #4a4e4d;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 2.5em;
 }

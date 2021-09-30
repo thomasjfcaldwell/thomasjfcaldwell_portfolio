@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './style/nav.css';
+import portfolioLogo from './icons/portfoliologo.svg';
 class Header extends Component {
 	render() {
 		return (
 			<div>
 				<Navbar className='navbar-container' collapseOnSelect expand='md'>
-					<Navbar.Brand>
+					<Navbar.Brand style={{ width: '50%' }}>
 						<Link className='nav-link-text' to={'/'} expand='md'>
-							THOMAS CALDWELL PORTFOLIO
+							<div
+								style={{
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+								}}>
+								<Image style={{ width: '75%' }} src={portfolioLogo} />
+							</div>
 						</Link>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />

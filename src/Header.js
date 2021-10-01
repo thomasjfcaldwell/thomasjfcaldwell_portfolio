@@ -30,7 +30,7 @@ class Header extends Component {
 							<Link to={'/contact'} className='nav-link-text'>
 								Contact
 							</Link>
-							<Link to={'/quizgame'} className='nav-link-text'>
+							<Link to={'/myprojects'} className='nav-link-text'>
 								Projects
 							</Link>
 						</Nav>

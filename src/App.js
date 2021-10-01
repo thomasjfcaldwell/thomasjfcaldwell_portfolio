@@ -5,9 +5,7 @@ import Home from './Home';
 import './App.scss';
 import 'aos/dist/aos.css';
 import Contact from './pages/contact/Contact';
-import QuizGame from './Quizgame';
-import { FaGithubSquare } from 'react-icons/fa';
-import { AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
+import MyProjects from './MyProjects';
 
 class App extends Component {
 	render() {
@@ -16,7 +14,7 @@ class App extends Component {
 				<nav>
 					<Link to='/contact'></Link>
 					<Link to='/'></Link>
-					<Link to='/quizgame'></Link>
+					<Link to='/myprojects'></Link>
 					<Link to='/knowyourwizard'></Link>
 					<Link to='/fleet'></Link>
 					<Link to='/fetchgoal'></Link>
@@ -31,9 +29,9 @@ class App extends Component {
 					<Route exact path='/contact' component={Contact} />
 					<Route
 						exact
-						path='/quizgame'
+						path='/myprojects'
 						render={() => {
-							return <QuizGame />;
+							return <MyProjects />;
 						}}
 					/>
 				</main>

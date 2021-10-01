@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import quizImage from './images/gameheadef.png';
-import wizardImage from './images/wizard copy.png';
-import fleetImage from './images/fleet.png';
-import fetchgoal from './images/fetchGoal.jpg';
-import picnic from './images/popuppicnics.jpg';
+import quizImage from './images/ProjectImages/quizgameforsite.png';
+import wizardImage from './images/ProjectImages/knowyourwizardforsite.png';
+import fleetImage from './images/ProjectImages/fleetforsite.png';
+import fetchgoal from './images/ProjectImages/fetchgoalforsite.png';
+import picnic from './images/ProjectImages/picnicforsite.png';
 import coffee from './images/needcoffee.jpg';
 import './style/projects.css';
 

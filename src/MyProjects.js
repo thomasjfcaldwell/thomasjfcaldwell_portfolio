@@ -3,7 +3,7 @@ import { Row, Col, Container, Image, Card } from 'react-bootstrap';
 import ProjectsData from './data/data.json';
 import './style/projectinfo.css';
 
-class QuizGame extends Component {
+class MyProjects extends Component {
 	render() {
 		return (
 			<>
@@ -56,4 +56,4 @@ class QuizGame extends Component {
 	}
 }
 
-export default QuizGame;
+export default MyProjects;

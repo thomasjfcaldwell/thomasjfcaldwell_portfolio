@@ -1,10 +1,10 @@
-import React, { useEffect, Component } from 'react';
+import React, { Component } from 'react';
 import resume from './images/thomasCaldwellResume.jpg';
 import placeholder from './images/350x150.png';
 
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './style/Resume.css';
-import './style/home.css'
+import './style/home.css';
 
 class Resume extends Component {
 	render() {

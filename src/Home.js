@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-
-import Typical from 'react-typical';
-
 import './App.scss';
 import { Row, Col, Container, Image } from 'react-bootstrap';
-import Playaround from './Playingaround';
+import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './pages/contact/Contact';
 import Resume from './Resume';
@@ -46,11 +43,10 @@ class Home extends Component {
 							</Col>
 						</Row>
 					</Container>
-					<Playaround />
+					<Skills />
 					<GraphicSkills />
 					<Projects />
 					<Resume />
-
 					<Contact />
 				</div>
 			</>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Row, Col, Container, Image } from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 import Graphics from './Graphics';
 import OnlineGraphics from './OnlineGraphics';
 import './style/home.css';
 import './style/graphicskills.css'
-import emailBlast1 from './images/GraphicsImage/65968 copy.png';
+
 
 class GraphicSkills extends Component {
 	render() {

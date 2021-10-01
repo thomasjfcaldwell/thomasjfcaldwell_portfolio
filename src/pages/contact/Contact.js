@@ -10,44 +10,40 @@ class Contact extends Component {
 					<div className='headline-container'>
 						<h1 className='headline'>Contact Thomas Here</h1>
 					</div>
-					<Row>
-						<Col lg={12}>
-							<Form
-								style={{ width: '100%' }}
-								action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
-								method='POST'>
-								<div>
-									<input
-										name='entry.1673834915'
-										type='text'
-										className='feedback-input'
-										required
-										placeholder='Name'
-									/>
-								</div>
-								<div>
-									<input
-										name='entry.218700094'
-										type='text'
-										className='feedback-input'
-										required
-										placeholder='Email'
-									/>
-								</div>
-								<div>
-									<textarea
-										name='entry.1359360774'
-										className='feedback-input'
-										placeholder=' send a message here'
-										style={{
-											color: 'black',
-										}}
-									/>
-								</div>
-								<input type='submit' value='Submit'></input>
-							</Form>
-						</Col>
-					</Row>
+
+					<Form
+						action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
+						method='POST'>
+						<div>
+							<input
+								name='entry.1673834915'
+								type='text'
+								className='feedback-input'
+								required
+								placeholder='Name'
+							/>
+						</div>
+						<div>
+							<input
+								name='entry.218700094'
+								type='text'
+								className='feedback-input'
+								required
+								placeholder='Email'
+							/>
+						</div>
+						<div>
+							<textarea
+								name='entry.1359360774'
+								className='feedback-input'
+								placeholder=' send a message here'
+								style={{
+									color: 'black',
+								}}
+							/>
+						</div>
+						<input type='submit' value='Submit'></input>
+					</Form>
 				</Container>
 			</div>
 		);

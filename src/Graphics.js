@@ -11,32 +11,29 @@ class Graphics extends Component {
 			<div>
 				<Container fluid className='graphics-container'>
 					<Row className='graphics-row'>
-						<Col className='graphics-col'>
+						<Col lg={6} sm={12} className='graphics-col'>
 							<Row className='print-graphics-row'>
-								<Col className='print-graphics-col'>
+								<Col sm={12} className='print-graphics-col'>
 									<Row className='print-graphics-col-row'>
-										
 										<Image
 											className='print-graphics-image'
 											src={printGraphic1}
 										/>
-										
+
 										<h5 className='print-graphics-text'>Brochures</h5>
 									</Row>
 								</Col>
-								<Col className='print-graphics-col'>
+								<Col sm={12} className='print-graphics-col'>
 									<Row className='print-graphics-col-row'>
-										
-											<Image
-												className='print-graphics-image'
-												src={printGraphic2}
-											/>
-										
+										<Image
+											className='print-graphics-image'
+											src={printGraphic2}
+										/>
 
 										<h5 className='print-graphics-text'>Menu's</h5>
 									</Row>
 								</Col>
-								<Col className='print-graphics-col'>
+								<Col sm={12} className='print-graphics-col'>
 									<Row className='print-graphics-col-row'>
 										<Image
 											className='print-graphics-image'

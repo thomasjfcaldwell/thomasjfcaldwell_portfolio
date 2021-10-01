@@ -10,18 +10,19 @@ export class OnlineGraphics extends Component {
 			<div>
 				<Container fluid className='online-graphics-container'>
 					<Row className='online-graphics-row'>
-						<Col className='online-graphics-col'>
-
+						<Col lg={6} sm={12} className='online-graphics-col'>
 							<h5 className='online-graphics-col-header'>Photo Editing</h5>
 						</Col>
 						<Col className='online-graphics-col'>
 							<Image src={photoEdit} className='online-graphics-image' />
 						</Col>
 
-						<Col className='online-graphics-col'>
-							<h5 className='online-graphics-col-header'>Email Blasts, Web Banners</h5>
+						<Col lg={6} sm={12} className='online-graphics-col'>
+							<h5 className='online-graphics-col-header'>
+								Email Blasts, Web Banners
+							</h5>
 						</Col>
-						<Col className='online-graphics-col'>
+						<Col lg={6} sm={12} className='online-graphics-col'>
 							<div className='graphic-skills-col-image-container'>
 								<Image className='graphic-skills-image' src={emailBlast1} />
 							</div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Form, Col, Row } from 'react-bootstrap';
-import "../../style/home.css"
+import '../../style/home.css';
 
 class Contact extends Component {
 	render() {
@@ -13,6 +13,7 @@ class Contact extends Component {
 					<Row>
 						<Col lg={12}>
 							<Form
+								style={{ width: '100%' }}
 								action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
 								method='POST'>
 								<div>

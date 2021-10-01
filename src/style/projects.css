@@ -1,12 +1,13 @@
 .projects-container {
 	background-color: #fe8a71;
+	/* padding: 10em; */
 }
 
 .projects-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 5em 0em;
+	/* margin: 5em 0em; */
 }
 .projects-col {
 	display: flex;
@@ -52,4 +53,13 @@
 }
 .link-icon {
 	color: #4a4e4d;
+}
+
+@media only screen and (max-width: 600px) {
+	#skills-card {
+		width: 33%;
+	}
+	.projects-container {
+		padding: 0;
+	}
 }

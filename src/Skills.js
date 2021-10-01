@@ -14,18 +14,22 @@ const Skills = () => {
 	}, []);
 	return (
 		<div data-aos='flip-left'>
-			<div className='headline-container'>
+			<div className='skills-headline-container'>
 				<h1 className='headline'>SKILLS</h1>
 			</div>
 			<Container fluid className='skills-container'>
 				{MySkills.map((SkillsInfo, id) => {
 					return (
 						<>
-							<Card className='bg-transparent border-0' id='skills-card'>
-								<Card.Text>{SkillsInfo.title}</Card.Text>
+							
+								<Card className='bg-transparent border-0' id='skills-card'>
+									<Card.Text className='skills-card-text'>
+										{SkillsInfo.title}
+									</Card.Text>
 
-								<Image className='skillsImage' src={SkillsInfo.image} />
-							</Card>
+									<Image className='skillsImage' src={SkillsInfo.image} />
+								</Card>
+							
 						</>
 					);
 				})}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 import './style/graphics.css';
 import printGraphic1 from './images/GraphicsImage/printdesign1.png';
 import printGraphic2 from './images/GraphicsImage/printmockup2.png';
@@ -14,34 +14,40 @@ class Graphics extends Component {
 						<Col lg={6} sm={12} className='graphics-col'>
 							<Row className='print-graphics-row'>
 								<Col sm={12} className='print-graphics-col'>
-									<Row className='print-graphics-col-row'>
+									<Card
+										className='bg-transparent border-0 d-flex flex-sm-column
+									flex-lg-row align-items-center'>
 										<Image
 											className='print-graphics-image'
 											src={printGraphic1}
 										/>
 
 										<h5 className='print-graphics-text'>Brochures</h5>
-									</Row>
+									</Card>
 								</Col>
 								<Col sm={12} className='print-graphics-col'>
-									<Row className='print-graphics-col-row'>
+									<Card
+										className='bg-transparent border-0 d-flex flex-sm-column
+									flex-lg-row align-items-center'>
 										<Image
 											className='print-graphics-image'
 											src={printGraphic2}
 										/>
 
 										<h5 className='print-graphics-text'>Menu's</h5>
-									</Row>
+									</Card>
 								</Col>
 								<Col sm={12} className='print-graphics-col'>
-									<Row className='print-graphics-col-row'>
+									<Card
+										className='bg-transparent border-0 d-flex flex-sm-column
+									flex-lg-row align-items-center'>
 										<Image
 											className='print-graphics-image'
 											src={printGraphic3}
 										/>
 
 										<h5 className='print-graphics-text'>Flyers</h5>
-									</Row>
+									</Card>
 								</Col>
 							</Row>
 						</Col>

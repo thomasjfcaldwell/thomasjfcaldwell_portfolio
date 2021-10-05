@@ -22,7 +22,7 @@ export class OnlineGraphics extends Component {
 								Email Blasts, Web Banners
 							</h5>
 						</Col>
-						<Col lg={6} sm={12} className='online-graphics-col'>
+						<Col lg={12} sm={12} className='online-graphics-col'>
 							<div className='graphic-skills-col-image-container'>
 								<Image className='graphic-skills-image' src={emailBlast1} />
 							</div>

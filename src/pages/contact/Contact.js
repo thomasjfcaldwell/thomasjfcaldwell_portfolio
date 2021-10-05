@@ -10,8 +10,8 @@ class Contact extends Component {
 					<div className='headline-container'>
 						<h1 className='headline'>Contact Thomas Here</h1>
 					</div>
-					<Card>
-						<Form
+					<div>
+						<form
 							action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSdYWaw0WkN_qpVogvapyKaZqx9A_hqGmmMWrWsYIPSziWcBRg/formResponse'
 							method='POST'>
 							<div>
@@ -43,8 +43,8 @@ class Contact extends Component {
 								/>
 							</div>
 							<input type='submit' value='Submit'></input>
-						</Form>
-					</Card>
+						</form>
+					</div>
 				</Container>
 			</div>
 		);

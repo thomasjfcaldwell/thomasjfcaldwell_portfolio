@@ -11,14 +11,22 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 2em 0em;
 }
 .online-graphics-col-header {
-	font-size: 1.2em;
+	font-size: 1.8em;
 	text-transform: uppercase;
-	margin-top: 2em;
+	padding: 0.5em;
+	margin: 0.2em;
 }
 
 .online-graphics-image {
 	width: 100%;
 	margin-top: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+	.online-graphics-col-header {
+		font-size: 1.3em;
+	}
 }

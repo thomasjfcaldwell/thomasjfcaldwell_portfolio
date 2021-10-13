@@ -170,7 +170,7 @@ const Projects = () => {
 									</a>
 								</Col>
 								<Col className='links-col'>
-									<a href='https://warm-brook-93750.herokuapp.com'>
+									<a href='https://mysterious-refuge-41535.herokuapp.com/'>
 										<FaRegCheckCircle className='link-icon' size={15} />
 										<span className='links-col-text'>Deployed app</span>
 									</a>
@@ -204,7 +204,7 @@ const Projects = () => {
 						<Container>
 							<Row>
 								<Col className='links-col'>
-									<a href='https://github.com/SEIR622-Cass-theCassettes/fleet-frontend'>
+									<a href='https://github.com/thomasjfcaldwell/popuppicnicsbywow'>
 										<FaGithubSquare className='link-icon' size={15} />
 										<span className='links-col-text'>GitHub Repo</span>
 									</a>

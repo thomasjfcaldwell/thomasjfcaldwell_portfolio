@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import resume from './images/thomasCaldwellResume.jpg';
-import placeholder from './images/350x150.png';
 
 import { Row, Col, Container, Image } from 'react-bootstrap';
 import './style/Resume.css';
@@ -12,7 +11,7 @@ class Resume extends Component {
 			<>
 				<Container fluid className='content-container'>
 					<div className='headline-container'>
-						<h1 className='headline'>SKILLS</h1>
+						<h1 className='headline'>Resume and Contact Info</h1>
 					</div>
 					<Row className='content-row'>
 						<Col lg={4} sm={12} className='content-col'>
@@ -32,7 +31,7 @@ class Resume extends Component {
 								</a>
 							</div>
 						</Col>
-						<Col lg={4} sm={12}>
+						{/* <Col lg={4} sm={12}>
 							<Container className='project-opinion-container'>
 								<Row className='project-opinion-row'>
 									<Col className='project-opinion-col'>
@@ -55,7 +54,7 @@ class Resume extends Component {
 									</Col>
 								</Row>
 							</Container>
-						</Col>
+						</Col> */}
 						<Col lg={4} sm={12}>
 							<Container fluid className='contact-container'>
 								<Row className='contact-row'>

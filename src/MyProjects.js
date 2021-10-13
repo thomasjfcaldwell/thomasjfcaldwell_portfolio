@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Image, Card } from 'react-bootstrap';
 import ProjectsData from './data/data.json';
+import Contact from './pages/contact/Contact';
 import './style/projectinfo.css';
 
 class MyProjects extends Component {
@@ -16,7 +17,7 @@ class MyProjects extends Component {
 					{ProjectsData.map((ProjectsInfo, id) => {
 						return (
 							<>
-								<Container fluid className='project-info-container'>
+								<Container key={id} fluid className='project-info-container'>
 									<Row className='project-info-row'>
 										<Col className='project-info-col' lg={6}>
 											<div className='project-info-title-container'>
@@ -50,6 +51,7 @@ class MyProjects extends Component {
 							</>
 						);
 					})}
+					<Contact />
 				</div>
 			</>
 		);

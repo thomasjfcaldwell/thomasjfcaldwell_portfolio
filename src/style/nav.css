@@ -6,8 +6,10 @@
 }
 .nav-link-text {
 	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	padding: 0.7em;
-    text-align: center;
+	padding: 0.3em;
+	text-align: center;
+	font-size: 1.2em;
 }

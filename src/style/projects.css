@@ -51,6 +51,10 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.links-col a {
+	text-decoration: none;
+}
 .links-col-text {
 	font-size: 0.8em;
 	padding: 0.2em;

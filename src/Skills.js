@@ -21,10 +21,7 @@ const Skills = () => {
 				{MySkills.map((SkillsInfo, id) => {
 					return (
 						<>
-							<Card
-								key={id}
-								className='bg-transparent border-0'
-								id='skills-card'>
+							<Card id='skills-card'>
 								<Card.Text className='skills-card-text'>
 									{SkillsInfo.title}
 								</Card.Text>

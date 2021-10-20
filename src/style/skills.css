@@ -30,6 +30,8 @@
 	margin: 2em 0em;
 	padding: 0.5em;
 	text-align: center;
+	background: transparent;
+	border: none;
 }
 .skills-card-text {
 	font-family: 'Montserrat', sans-serif;
